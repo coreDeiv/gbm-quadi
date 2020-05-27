@@ -1,0 +1,9 @@
+#Agregando cache a algunos archivos
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|pdf)$">
+	Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+# Quitando cache en archivos que se requieren sean actualizados.
+<FilesMatch ".(pl|php|json|xml|css)$">
+	Header unset Cache-Control
+</FilesMatch>
