@@ -1,0 +1,17 @@
+/* Dropdown Menu */
+.dropdown-menu {
+	>li {
+		>a {
+			padding: 5px 10px;
+		}
+	}
+	li {
+		a {
+			&:hover {
+				color: $color_3;
+				text-decoration: none;
+				background: none;
+			}
+		}
+	}
+}

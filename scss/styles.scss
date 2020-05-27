@@ -1,4 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+// Components
+@import 'components/_variables.scss';
+@import 'components/_elements.scss';
+
+// Core
+@import 'core/_dropdown.scss';
+@import 'core/_navbar.scss';
+@import 'core/_sidebar.scss';
+
+// Mixins
+@import 'mixins/_queries.scss';
+
+// Content
+
+
+// Some Globals Styles
+@import '_globals.scss';

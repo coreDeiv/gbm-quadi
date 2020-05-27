@@ -1,0 +1,59 @@
+/* Nvabar */
+.navbar {
+	border: 0;
+	&.navbar-custom {
+		background: #1973c1;
+		height: 60px;
+		.navbar-header {
+			.navbar-toggle {
+				background: rgba(255, 255, 255, 0.1);
+				padding: 12px;
+				margin-top: 10px;
+				&:hover {
+					background: rgba(255, 255, 255, 0.05);
+				}
+				.icon-bar {
+					background: #fff;
+				}
+			}
+		}
+	}
+	&-brand {
+		padding: 2px 40px;
+	}
+	.nav {
+		>li {
+			>a {
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+					background-color: $background_color_1;
+					background: none;
+				}
+				&:focus {
+					text-decoration: none;
+					background-color: $background_color_1;
+					background: none;
+				}
+			}
+		}
+		.open {
+			>a {
+				color: #fff;
+				text-decoration: none;
+				background-color: $background_color_1;
+				background: none;
+				&:hover {
+					text-decoration: none;
+					background-color: $background_color_1;
+					background: none;
+				}
+				&:focus {
+					text-decoration: none;
+					background-color: $background_color_1;
+					background: none;
+				}
+			}
+		}
+	}
+}
