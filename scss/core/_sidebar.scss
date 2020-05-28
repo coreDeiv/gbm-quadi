@@ -6,7 +6,7 @@
 	box-shadow: none;
 	background-image: linear-gradient(0deg, #032667, #1973c1);
 	ul {
-		margin: 20px 0px;
+		margin: 0px 0px 20px 0px;
 	}
 	ul.nav {
 		a {			
@@ -75,11 +75,14 @@
 			}
 		}
 		li {
+			width: 100%;
 			a {
 				height: 50px;
 				font-size: 15px;
 				line-height: 2em;
 				color: #fff;
+				letter-spacing: 1px;
+				font-size: 1.5rem;
 			}
 			&:last-child {
 				position: absolute;
