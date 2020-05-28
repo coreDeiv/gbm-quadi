@@ -7,10 +7,13 @@
 @import 'core/_dropdown.scss';
 @import 'core/_navbar.scss';
 @import 'core/_sidebar.scss';
+@import 'core/_main_panel.scss';
 
 // Mixins
 @import 'mixins/_queries.scss';
 @import 'mixins/_buttons.scss';
+@import 'mixins/_tables.scss';
+@import 'mixins/_inputs.scss';
 
 // Content
 @import 'content/_index-login.scss';

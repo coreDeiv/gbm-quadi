@@ -4,10 +4,13 @@
   left: 0;
   right: 0;
   bottom: 0;
+  background-image: url(../media/img/bgi-login.png), linear-gradient(45deg, #032769, #1973c1, #1973c1);
+  background-position: 0% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: linear-gradient(45deg, #032769, #1973c1);
   .cd_form-login {
     background: #1973C1;
     color: #fff;
@@ -16,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0,0,0,0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0,0,0,0.05);
     .content-form {
       width: 70%;
       margin: auto;

@@ -1,0 +1,40 @@
+.cd_table {
+  padding: 3.5rem 7rem;
+}
+.cd_table > table, th, td, tr, thead, tbody {
+  border: none !important;
+}
+
+.cd_table table > thead > tr > th:nth-child(1),
+.cd_table table > tbody > tr > td:nth-child(1) {
+  padding-left: 30px;
+}
+
+.cd_table table > thead > tr > th:nth-child(3),
+.cd_table table > thead > tr > th:nth-child(4) {
+  text-align: center !important;
+}
+
+.cd_table table > tbody > tr > td:nth-child(3), 
+.cd_table table > tbody > tr > td:nth-child(4) {
+  text-align: center !important;
+}
+
+.cd_table table > tbody > tr > td:nth-child(3) span, 
+.cd_table table > tbody > tr > td:nth-child(4) span {
+  background: #1973c1;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.cd_table .table-hover > tbody > tr > td {
+  padding: 18px 0;
+}
+.cd_table .table-hover > tbody > tr {
+  transition: ease-in-out .3s all !important;
+}
+.cd_table .table-hover > tbody > tr:hover {
+  background-color: #a3c8e94b;
+}
