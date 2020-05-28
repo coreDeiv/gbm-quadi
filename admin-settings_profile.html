@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>WBM | DashBoard</title>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
+		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css"><!--Century Gothic Font-->
+		<link href="./css/bootstrap-4.3.1.min.css" rel="stylesheet" />
+		<link href="./css/bootstrap.min.css" rel="stylesheet" />
+		<link href="./css/bootstraplus.min.css" rel="stylesheet" />
+		<link href="./css/styles.css" rel="stylesheet" />
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header>
+			<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img src="./media/logo/logo.png" alt="img-logo" class="img img-fluid of-cover w-75">
+            </a>
+            <ul class="nav navbar-top-links navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="#">USUARIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">SMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">USD</a>
+              </li>
+              <li class="nav-item gear-item active">
+                <a class="nav-link active" href="admin-users.html"><i class="fas fa-cog"></i></a>
+              </li>
+            </ul>
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<!-- Sidebar -->
+		<aside id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+			<h4 class="text-center text-white pt-10 text-bold">CONFIGURACION</h4>
+			<div class="divider"></div>
+			<ul class="nav menu">
+				<li class="active"><a href="#">Perfil</a></li>
+				<li><a href="#">Configaracion General</a></li>
+				<li><a href="#">ID de Compañia</a></li>
+				<li><a href="admin-settings_acoustic.html">Configaracion Acoustic</a></li>
+				<li><a href="index.html">Cerrar Sesion</a></li>
+			</ul>
+		</aside><!--/.sidebar-->
+		
+		<!-- Contenido Principal -->
+		<main class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+					
+			<div class="panel panel-container">
+				
+				<div class="container-fluid">
+
+          <!-- Title -->
+          <div class="row ai-center">
+            <div class="col-6">
+              <h1 class="text-second text-bold">PERFIL</h1>
+            </div>
+            <div class="col-6">
+              <a href="#" class="btn btn-primary float-right">GUARDAR</a>
+            </div>
+            <div class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dui molestie, porta purus in, eleifend nibh.</div>
+          </div>
+        
+          <!-- Form of profile -->
+          <div class="row py-5">
+            <form method="GET" class="w-100">
+              <div class="col-md-4">
+                <div class="input-group">
+                  <label for="name_settings" class="text-second">Nombre</label>
+                  <input type="text" class="form-control" name="name_settings" placeholder="Nombre" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <label for="email_settings" class="text-second">Correo</label>
+                  <input type="email" class="form-control" name="email_settings" placeholder="Correo" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <label for="psw_settings" class="text-second">Contraseña</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control" name="psw_settings" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                    <a href="#">
+                      <span class="input-group-text" id="basic-addon2"><i class="fas fa-pen"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+
+
+          <!-- ¡¡¡ Edit password input missing !!! -->
+
+
+
+
+
+        </div>
+
+			</div>			
+			
+		</main>	<!--/.main-->
+
+		<!-- <footer>
+			
+		</footer> -->
+	
+		<script src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='https://kit.fontawesome.com/25f07c253e.js'></script>
+    <script src='js/scripts.js'></script>
+		
+	</body>
+</html>
