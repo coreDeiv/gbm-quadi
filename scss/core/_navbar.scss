@@ -1,4 +1,48 @@
 /* Nvabar */
+.navbar.navbar-custom.navbar-fixed-top {
+	padding: 0;
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+		.nav {
+			> li {
+				padding: 5px;
+				margin: 0 10px;
+				a {
+					font-weight: bold;
+				}
+			}
+		}
+		.navbar-top-links {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			.nav-link {
+				&.active {
+					&::before {
+						content: '';
+						position: absolute;
+						bottom: 30%;
+						right: 0;
+						left: 0;
+						background: $background_color_1;
+						height: 15%;
+					}
+				}
+			}
+			.gear-item {
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+				background: #125ba6;
+				&.active {					
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+
 .navbar {
 	border: 0;
 	&.navbar-custom {
