@@ -1,9 +1,16 @@
 /* tablas */
 .cd_table {
-  padding: 3.5rem 7rem;
+  padding: 3.5rem 4rem;
 }
 .cd_table > table, th, td, tr, thead, tbody {
   border: none !important;
+}
+.cd_table > table > thead > tr > th,
+.cd_table > table > thead > tr > th > span, 
+.cd_table > table > thead > tr > th > i, 
+.cd_table > table > thead > tr > th > svg, 
+.cd_table > table > thead > tr > th > a {
+  color: $color_second !important;
 }
 
 .cd_table table > thead > tr > th:nth-child(1),

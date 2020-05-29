@@ -3,36 +3,70 @@
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
-  &-primary {
+  width: 120px;
+  margin: auto;
+  letter-spacing: 1px;
+  &-main {
     background: $color_main;
     color: $color_5;
+    &:hover {
+      cursor: pointer;
+    }
   }
-  &-secundary {
-    background: $color-secundary;
+  &-primary {
+    background: $color-primary;
     color: $color_5;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-secondary {
+    background: $color-secondary;
+    color: $color_5;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-success {
     background: $color-success;
     color: $color_5;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-danger {
     background: $color-danger;
     color: $color_5;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-warning {
     background: $color-warning;
     color: $color_4;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-info {
     background: $color-info;
     color: $color_5;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-light {
     background: $color-light;
     color: $color_4;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-dark {
     background: $color-dark;
     color: $color_5;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

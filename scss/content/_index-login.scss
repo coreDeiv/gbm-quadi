@@ -9,8 +9,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 110vh;
+  overflow-y: scroll;
+  padding: 5%;
+  @media (min-width: 768px) {
+    overflow: hidden;
+    padding: 0;
+    height: 100vh;
+  }
   .cd_form-login {
     background: #1973C1;
     color: #fff;
@@ -21,16 +27,19 @@
     align-items: center;
     box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0,0,0,0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0,0,0,0.05);
     .content-form {
-      width: 70%;
+      width: 60%;
       margin: auto;
       margin-top: 3.5rem;
       margin-bottom: 3.5rem;
+      @media (max-width: 978px) {
+        width: 90%;
+      }
       h2 {
         font-weight: bold;
       }
       .form-group {
         input {
-          background: rgba(255,255,255,.5);
+          background: #3081c7;
           border-radius: 50px;
           padding: 20px 30px;
           border: none;
@@ -46,6 +55,9 @@
           &:focus::-webkit-input-placeholder {
             color: #fff;
           }
+        }
+        a[href="recover-password.html"] {
+          font-size: 14px;
         }
       }
     }
