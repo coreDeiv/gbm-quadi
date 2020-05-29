@@ -7,4 +7,32 @@
     background: $color_main;
     color: $color_5;
   }
+  &-secundary {
+    background: $color-secundary;
+    color: $color_5;
+  }
+  &-success {
+    background: $color-success;
+    color: $color_5;
+  }
+  &-danger {
+    background: $color-danger;
+    color: $color_5;
+  }
+  &-warning {
+    background: $color-warning;
+    color: $color_4;
+  }
+  &-info {
+    background: $color-info;
+    color: $color_5;
+  }
+  &-light {
+    background: $color-light;
+    color: $color_4;
+  }
+  &-dark {
+    background: $color-dark;
+    color: $color_5;
+  }
 }

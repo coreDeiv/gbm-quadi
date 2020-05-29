@@ -22,6 +22,27 @@
   .tag-primary {
     background: #1973c1;
     color: #fff; }
+  .tag-secundary {
+    background: #6c757d;
+    color: #fff; }
+  .tag-success {
+    background: #28a745;
+    color: #fff; }
+  .tag-danger {
+    background: #dc3545;
+    color: #fff; }
+  .tag-warning {
+    background: #ffc107;
+    color: #444; }
+  .tag-info {
+    background: #17a2b8;
+    color: #fff; }
+  .tag-light {
+    background: #f9f9f9;
+    color: #444; }
+  .tag-dark {
+    background: #343a40;
+    color: #fff; }
 
 /* Dropdown Menu */
 .dropdown-menu > li > a {

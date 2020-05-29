@@ -12,6 +12,16 @@ $color_4: #444;
 $color_5: #fff;
 
 // Colores extensibles de Bootstrap
+// Sin opacidad
+$color-primary: #007bff;
+$color-secundary: #6c757d;
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-warning: #ffc107;
+$color-info: #17a2b8;
+$color-light: #f9f9f9;
+$color-dark: #343a40;
+// Con opacidad
 $color-alert-primary: #cce5ff;
 $color-alert-secundary: #e2e3e5;
 $color-alert-success: #d4edda;
@@ -24,6 +34,9 @@ $color-alert-dark: #d6d8d9;
 // Backgrounds
 $background_color_1: rgba(#ffffff, .2);
 $background_color_2: rgba(#30a5ff, .5);
+
+// Tamaños
+$btn-input-size: 300px;
 
 // Fuentes
 $font_family_1: "century-gothic", sans-serif, serif;
