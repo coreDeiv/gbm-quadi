@@ -1,11 +1,29 @@
 // Variables
+
+// Colores - Principales
 $color_main: #1973c1;
 $color_second: #032769;
+
+// Colores Secundarios
 $color_1: #444444;
 $color_2: #777;
 $color_3: #30a5ff;
 $color_4: #444;
 $color_5: #fff;
-$font_family_1: "century-gothic", sans-serif, serif;
-$background_color_1: rgba(255, 255, 255, 0.2);
+
+// Colores extensibles de Bootstrap
+$color-alert-primary: #cce5ff;
+$color-alert-secundary: #e2e3e5;
+$color-alert-success: #d4edda;
+$color-alert-danger: #f8d7da;
+$color-alert-warning: #fff3cd;
+$color-alert-info: #d1ecf1;
+$color-alert-light: #f9f9f9;
+$color-alert-dark: #d6d8d9;
+
+// Backgrounds
+$background_color_1: rgba(#ffffff, .2);
 $background_color_2: rgba(#30a5ff, .5);
+
+// Fuentes
+$font_family_1: "century-gothic", sans-serif, serif;

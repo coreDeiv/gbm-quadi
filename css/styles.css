@@ -228,6 +228,7 @@
   .btn-submit[type="submit"]:focus {
     border-radius: 50px; }
 
+/* tablas */
 .cd_table {
   padding: 3.5rem 7rem; }
 
@@ -250,10 +251,25 @@
   padding: 18px 0; }
 
 .cd_table .table-hover > tbody > tr {
-  transition: ease-in-out .3s all !important; }
+  transition: ease-in-out .1s all !important; }
 
-.cd_table .table-hover > tbody > tr:hover {
-  background-color: #a3c8e94b; }
+/* Hover en Tablas*/
+.cd_table .table-hover.thover-primary > tbody > tr:hover {
+  background-color: #cce5ff; }
+.cd_table .table-hover.thover-warning > tbody > tr:hover {
+  background-color: #fff3cd; }
+.cd_table .table-hover.thover-success > tbody > tr:hover {
+  background-color: #d4edda; }
+.cd_table .table-hover.thover-danger > tbody > tr:hover {
+  background-color: #f8d7da; }
+.cd_table .table-hover.thover-warning > tbody > tr:hover {
+  background-color: #fff3cd; }
+.cd_table .table-hover.thover-info > tbody > tr:hover {
+  background-color: #d1ecf1; }
+.cd_table .table-hover.thover-light > tbody > tr:hover {
+  background-color: #f9f9f9; }
+.cd_table .table-hover.thover-dark > tbody > tr:hover {
+  background-color: #d6d8d9; }
 
 /* Estilo de input line block */
 .input-group-icon {

@@ -1,3 +1,4 @@
+/* tablas */
 .cd_table {
   padding: 3.5rem 7rem;
 }
@@ -25,9 +26,83 @@
 }
 
 .cd_table .table-hover > tbody > tr {
-  transition: ease-in-out .3s all !important;
+  transition: ease-in-out .1s all !important;
 }
 
-.cd_table .table-hover > tbody > tr:hover {
-  background-color: #a3c8e94b;
+/* Hover en Tablas*/
+.cd_table {
+  .table-hover {
+    &.thover-primary {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-primary;
+          }
+        }
+      }
+    }
+    &.thover-warning {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-warning;
+          }
+        }
+      }
+    }
+    &.thover-success {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-success;
+          }
+        }
+      }
+    }
+    &.thover-danger {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-danger;
+          }
+        }
+      }
+    }
+    &.thover-warning {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-warning;
+          }
+        }
+      }
+    }
+    &.thover-info {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-info;
+          }
+        }
+      }
+    }
+    &.thover-light {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-light;
+          }
+        }
+      }
+    }
+    &.thover-dark {
+      > tbody {
+        > tr {
+          &:hover {
+            background-color: $color-alert-dark;
+          }
+        }
+      }
+    }
+  }
 }
