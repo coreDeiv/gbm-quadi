@@ -14,6 +14,15 @@
 .text-second {
   color: #032769; }
 
+.tag {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px; }
+  .tag-primary {
+    background: #1973c1;
+    color: #fff; }
+
 /* Dropdown Menu */
 .dropdown-menu > li > a {
   padding: 5px 10px; }
@@ -236,15 +245,6 @@
 .cd_table table > tbody > tr > td:nth-child(3),
 .cd_table table > tbody > tr > td:nth-child(4) {
   text-align: center !important; }
-
-.cd_table table > tbody > tr > td:nth-child(3) span,
-.cd_table table > tbody > tr > td:nth-child(4) span {
-  background: #1973c1;
-  color: #fff;
-  padding: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 5px; }
 
 .cd_table .table-hover > tbody > tr > td {
   padding: 18px 0; }

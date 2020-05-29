@@ -1,0 +1,10 @@
+.tag {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  &-primary {
+    background: $color_main;
+    color: $color_5;
+  }
+}
