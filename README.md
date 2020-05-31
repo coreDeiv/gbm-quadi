@@ -1,7 +1,9 @@
 # Quadi Project - GBM
-If you want to follow the project, I invite you to review the [change history](https://github.com/coreDeiv/wbm-quadi/blob/master/CHANGELOG.md)
+If you want to follow the project, I invite you to review the Change History
 
-### Contact:
+### Developments:
 
+- *HTML layout artist*
 - David Torres Parra
 - davidparra@qdata.io
+- [change history](https://bitbucket.org/qdata/gbm-solution-html/src/development/CHANGELOG.md)

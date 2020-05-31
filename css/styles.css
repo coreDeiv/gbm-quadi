@@ -18,31 +18,55 @@
   padding: 5px;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 5px; }
-  .tag-primary {
+  border-radius: 5px;
+  width: 120px;
+  margin: auto;
+  letter-spacing: 1px; }
+  .tag-main {
     background: #1973c1;
     color: #fff; }
-  .tag-secundary {
-    background: #6c757d;
+    .tag-main:hover {
+      cursor: pointer; }
+  .tag-primary {
+    background: #46a9ff;
     color: #fff; }
+    .tag-primary:hover {
+      cursor: pointer; }
+  .tag-secondary {
+    background: #a2a2a2;
+    color: #fff; }
+    .tag-secondary:hover {
+      cursor: pointer; }
   .tag-success {
-    background: #28a745;
+    background: #3ddd9f;
     color: #fff; }
+    .tag-success:hover {
+      cursor: pointer; }
   .tag-danger {
-    background: #dc3545;
+    background: #fc5959;
     color: #fff; }
+    .tag-danger:hover {
+      cursor: pointer; }
   .tag-warning {
     background: #ffc107;
     color: #444; }
+    .tag-warning:hover {
+      cursor: pointer; }
   .tag-info {
     background: #17a2b8;
     color: #fff; }
+    .tag-info:hover {
+      cursor: pointer; }
   .tag-light {
     background: #f9f9f9;
     color: #444; }
+    .tag-light:hover {
+      cursor: pointer; }
   .tag-dark {
     background: #343a40;
     color: #fff; }
+    .tag-dark:hover {
+      cursor: pointer; }
 
 /* Dropdown Menu */
 .dropdown-menu > li > a {
@@ -181,7 +205,7 @@
     .sidebar ul.nav li a {
       height: 50px;
       font-size: 15px;
-      line-height: 2em;
+      line-height: 1em;
       color: #fff;
       letter-spacing: 1px;
       font-size: 1.5rem; }
@@ -249,12 +273,30 @@
   .btn-submit[type="submit"]:focus {
     border-radius: 50px; }
 
+.btn-primary {
+  background: #1973c1;
+  border-color: #1973c1; }
+  .btn-primary.btn-outline {
+    border-color: #1973c1 !important;
+    color: #1973c1 !important; }
+    .btn-primary.btn-outline:hover {
+      background: #fff !important;
+      border-color: #1973c1 !important;
+      color: #1973c1 !important; }
+
 /* tablas */
 .cd_table {
-  padding: 3.5rem 7rem; }
+  padding: 3.5rem 4rem; }
 
 .cd_table > table, th, td, tr, thead, tbody {
   border: none !important; }
+
+.cd_table > table > thead > tr > th,
+.cd_table > table > thead > tr > th > span,
+.cd_table > table > thead > tr > th > i,
+.cd_table > table > thead > tr > th > svg,
+.cd_table > table > thead > tr > th > a {
+  color: #032769 !important; }
 
 .cd_table table > thead > tr > th:nth-child(1),
 .cd_table table > tbody > tr > td:nth-child(1) {
@@ -331,8 +373,14 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh;
+  overflow-y: scroll;
+  padding: 5%; }
+  @media (min-width: 768px) {
+    .login {
+      overflow: hidden;
+      padding: 0;
+      height: 100vh; } }
   .login .cd_form-login {
     background: #1973C1;
     color: #fff;
@@ -343,14 +391,17 @@ input {
     align-items: center;
     box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05); }
     .login .cd_form-login .content-form {
-      width: 70%;
+      width: 60%;
       margin: auto;
       margin-top: 3.5rem;
       margin-bottom: 3.5rem; }
+      @media (max-width: 978px) {
+        .login .cd_form-login .content-form {
+          width: 90%; } }
       .login .cd_form-login .content-form h2 {
         font-weight: bold; }
       .login .cd_form-login .content-form .form-group input {
-        background: rgba(255, 255, 255, 0.5);
+        background: #3081c7;
         border-radius: 50px;
         padding: 20px 30px;
         border: none;
@@ -364,6 +415,8 @@ input {
           line-height: 22px; }
         .login .cd_form-login .content-form .form-group input:focus::-webkit-input-placeholder {
           color: #fff; }
+      .login .cd_form-login .content-form .form-group a[href="recover-password.html"] {
+        font-size: 14px; }
   .login .select_profile .btn {
     border-radius: 50px;
     width: 200px; }
@@ -382,7 +435,7 @@ html {
   font-style: inherit; }
 
 body {
-  background: #f1f4f7;
+  background: #fff;
   padding-top: 60px;
   font-size: 18px;
   color: #444444;
