@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://getbootstrap.com/">
-    <img src="https://raw.githubusercontent.com/coreDeiv/gbm-quadi/master/media/logo/logo-bg-blue.PNG" alt="Bootstrap logo" width="auto" height="auto">
-  </a>
+  <img src="https://raw.githubusercontent.com/coreDeiv/gbm-quadi/master/media/logo/logo-bg-blue.PNG" alt="GBM Logo" width="auto" height="auto" title="GBM Solution">
 </p>
 
 <h3 align="center">GBM Solution</h3>
@@ -32,9 +30,7 @@ Visit the [GBM-Static Page](https://coredeiv.github.io/gbm-quadi/) so you can pr
 
 ## Contributing
 
-**Note**: If you do not find any contribution information, proceed to make a direct inquiry to the Developer's email
-
-Please read through our contributing guidelines. Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/coreDeiv/gbm-quadi/blob/master/CHANGELOG.md). Included are directions for opening issues, coding standards, and notes on development.
 
 Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the Code Guide (.editorconfig), maintained by David Torres.
 
