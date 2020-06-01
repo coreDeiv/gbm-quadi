@@ -9,64 +9,118 @@
   &-main {
     background: $color_main;
     color: $color_5;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color_main;
+      color: $color_main;
+      background: $color_5;
     }
   }
   &-primary {
     background: $color-primary;
     color: $color_5;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      background: $color_5;
     }
   }
   &-secondary {
     background: $color-secondary;
     color: $color_5;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-secondary;
+      color: $color-secondary;
+      background: $color_5;
     }
   }
   &-success {
     background: $color-success;
     color: $color_5;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-success;
+      color: $color-success;
+      background: $color_5;
     }
   }
   &-danger {
     background: $color-danger;
     color: $color_5;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-danger;
+      color: $color-danger;
+      background: $color_5;
     }
   }
   &-warning {
     background: $color-warning;
     color: $color_4;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-warning;
+      color: $color-warning;
+      background: $color_5;
     }
   }
   &-info {
     background: $color-info;
     color: $color_5;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-info;
+      color: $color-info;
+      background: $color_5;
     }
   }
   &-light {
     background: $color-light;
     color: $color_4;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-light;
+      color: $color-light;
+      background: $color_5;
     }
   }
   &-dark {
     background: $color-dark;
     color: $color_5;
+    border: 1px solid transparent;
     &:hover {
       cursor: pointer;
+    }
+    &-outline {
+      border: 1px solid $color-dark;
+      color: $color-dark;
+      background: $color_5;
     }
   }
 }

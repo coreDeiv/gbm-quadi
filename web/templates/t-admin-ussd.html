@@ -1,0 +1,85 @@
+<!-- Template for admin ussd -->
+<!-- Contenido Principal -->
+<main id="admin-usuarios">
+  <div class="panel panel-container p-5">
+    
+    <div class="cotainer-fluid">
+      <div class="row d-flex w-100 ai-center">
+        <div class="col-7">
+          <h2 class="text-bold text-second ls-2">USSD</h2>
+        </div>
+        <div class="col-5 d-flex">
+          <form method="GET">
+            <div class="input-group-icon">
+              <input type="text" name="search_user" class="input-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <label for="search_user">
+                <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+              </label>
+            </div>
+            <a href="#" class="btn btn-primary btn-outline"><i class="far fa-chart-bar"></i> MÉTRICAS</a>
+            <a href="#" class="btn btn-primary">CREAR USSD</a>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 cd_table cd_table-users">
+          <table class="table table-hover thover-warning">
+            <thead>
+              <tr>
+                <th scope="col" class="w-70">NOMBRE SMS</th>
+                <th scope="col"><a href="#" id="order_by">FECHA FINAL <i class="fas fa-sort"></i></a></th>
+                <th scope="col" class="text-center">ESTADO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 1 <span class="tag tag-main-outline">Programa</span></td>
+                <td><span>Thu May 14 2020 05:12:32</span></td>
+                <td><div class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</div></td>
+              </tr>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 2</td>
+                <td><span>Sat Sep 28 2019 07:48:03</span></td>
+                <td><div class="tag tag-primary">Programado</div></td>
+              </tr>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 3</td>
+                <td><span>Mon Nov 11 2019 21:33:48</span></td>
+                <td><div class="tag tag-danger">Fallido</div></td>
+              </tr>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 4 <span class="tag tag-main-outline">Programa</span></td>
+                <td><span>Fri Feb 14 2020 04:19:44</span></td>
+                <td><div class="tag tag-secondary">Borrador</div></td>
+              </tr>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 5 <span class="tag tag-main-outline">Programa</span></td>
+                <td><span>Thu Dec 05 2019 16:21:39</span></td>
+                <td><div class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</div></td>
+              </tr>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 6</td>
+                <td><span>Mon Feb 03 2020 18:06:00</span></td>
+                <td><div class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</div></td>
+              </tr>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 7</td>
+                <td><span>Fri Mar 27 2020 17:51:05</span></td>
+                <td><div class="tag tag-primary">Programado</div></td>
+              </tr>
+              <tr>
+                <td><span class="text-main text-bold">#2543 -</span> SMS 8 <span class="tag tag-main-outline">Programa</span></td>
+                <td><span>Fri Sep 20 2019 14:38:11</span></td>
+                <td><div class="tag tag-primary">Programado</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>			
+</main>	<!--/.main-->

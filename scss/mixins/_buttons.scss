@@ -30,6 +30,9 @@
   &.btn-outline {
     border-color: $color_main !important;
     color: $color_main !important;
+    > i, > span, > svg {
+      color: $color_main !important;
+    }
     &:hover {
       background: $color_5 !important;
       border-color: $color_main !important;
