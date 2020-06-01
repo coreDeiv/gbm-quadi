@@ -1,9 +1,49 @@
-# Quadi Project - GBM
-If you want to follow the project, I invite you to review the Change History
+<p align="center">
+  <a href="https://getbootstrap.com/">
+    <img src="https://raw.githubusercontent.com/coreDeiv/gbm-quadi/master/media/logo/logo-bg-blue.PNG" alt="Bootstrap logo" width="auto" height="auto">
+  </a>
+</p>
 
-### Developments:
+<h3 align="center">GBM Solution</h3>
 
-- *HTML layout artist*
-- David Torres Parra
-- davidparra@qdata.io
-- [change history](https://bitbucket.org/qdata/gbm-solution-html/src/development/CHANGELOG.md)
+## Table of contents
+
+- [Quick start](#quick-start)
+- [Status](#status)
+- [Contributing](#contributing)
+- [Creators](#creators)
+
+
+## Quick start
+
+Several quick start options are available:
+
+- [Download the latest release.](https://github.com/coreDeiv/gbm-quadi/archive/master.zip)
+- Clone the repo: `git clone https://github.com/coreDeiv/gbm-quadi.git`
+
+Visit the [GBM-Static Page](https://coredeiv.github.io/gbm-quadi/) so you can preview the project.
+
+
+## Status
+
+[![Web gzip size](https://img.shields.io/github/repo-size/coredeiv/gbm-quadi?color=%2366063c&label=Github%20Project%20gzip%20size&logo=github)](https://github.com/coreDeiv/gbm-quadi)
+[![Version](https://img.shields.io/github/v/release/coredeiv/gbm-quadi?include_prereleases)](https://github.com/coreDeiv/gbm-quadi/releases/tag/v1.2.0.beta)
+[![Version](https://img.shields.io/badge/Preview%20Page-Static-%23%233579b0)](https://coredeiv.github.io/gbm-quadi/)
+
+## Contributing
+
+**Note**: If you do not find any contribution information, proceed to make a direct inquiry to the Developer's email
+
+Please read through our contributing guidelines. Included are directions for opening issues, coding standards, and notes on development.
+
+Moreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the Code Guide (.editorconfig), maintained by David Torres.
+
+Editor preferences are available in the editor config for easy use in common text editors. Read more and download plugins at [Editor Config](https://editorconfig.org/).
+
+## Creators
+
+#### Frontend Web Developer
+**David Torres**
+- [Github](https://github.com/coreDeiv)
+- [CodePen](https://codepen.io/coreDeiv)
+- [Portfolio](http://portfoliodavidtorres.com)
