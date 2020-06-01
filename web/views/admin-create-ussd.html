@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>GBM | Crear nuevo SMS</title>
+		<title>GBM | Crear nuevo ussd</title>
     <meta charset='utf-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
@@ -45,7 +45,7 @@
                 <a class="nav-link active" href="admin-sms.html">SMS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="admin-ussd.html">USD</a>
+                <a class="nav-link" href="admin-ussd.html">USSD</a>
               </li>
               <li class="nav-item gear-item">
                 <a class="nav-link" href="admin-settings_profile.html"><i class="fal fa-cog"></i></a>
@@ -60,37 +60,37 @@
 		<main id="admin-usuarios">
 			<div class="panel panel-container p-5">
 				
-				<form action="" method="GET" id="form_sms">
+				<form action="" method="GET" id="form_ussd">
           <div class="container-fluid">
 
             <!-- Title and buttons -->
             <div class="row ai-center">
               <div class="col-md-7 col-12">
-                <h1 class="text-second text-bold">NUEVA SMS</h1>
+                <h1 class="text-second text-bold">NUEVA USSD</h1>
               </div>
               <div class="col-md-5 col-12 btn-md-block text-center">
-                <!-- <button class="btn mt-2 btn-inline-block btn-secondary btn-outline" type="reset" name="cancel_sms">CANCELAR</button> -->
-                <a href="admin-sms.html" class="btn mt-2 btn-inline-block btn-secondary btn-outline">CANCELAR</a>
-                <!-- <button class="btn mt-2 btn-inline-block btn-primary btn-outline" type="submit" name="save_sms">GUARDAR</button> -->
-                <a href="admin-sms.html" class="btn mt-2 btn-inline-block btn-primary btn-outline">GUARDAR</a>
-                <!-- <button class="btn mt-2 btn-inline-block btn-success" type="reset" name="cancel_sms">PROGRAMAR</button> -->
-                <a href="admin-sms.html" class="btn mt-2 btn-inline-block btn-success">PROGRAMAR</a>
+                <!-- <button class="btn mt-2 btn-inline-block btn-secondary btn-outline" type="reset" name="cancel_ussd">CANCELAR</button> -->
+                <a href="admin-ussd.html" class="btn mt-2 btn-inline-block btn-secondary btn-outline">CANCELAR</a>
+                <!-- <button class="btn mt-2 btn-inline-block btn-primary btn-outline" type="submit" name="save_ussd">GUARDAR</button> -->
+                <a href="admin-ussd.html" class="btn mt-2 btn-inline-block btn-primary btn-outline">GUARDAR</a>
+                <!-- <button class="btn mt-2 btn-inline-block btn-success" type="reset" name="cancel_ussd">PROGRAMAR</button> -->
+                <a href="admin-ussd.html" class="btn mt-2 btn-inline-block btn-success">PROGRAMAR</a>
               </div>
             </div>
 
-            <!-- Creation sms Inputs and Preview -->
+            <!-- Creation ussd Inputs and Preview -->
             <div class="row p-5 p-md-0 mt-5">
               <div class="col-md-7 col-12">
 
                 <!-- Inputs -->
                 <div class="row p-5 p-md-0 ai-end">
                   <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
-                    <label for="sms_name" class="text-danger d-none">Nombre</label>
-                    <input type="text" class="form-control mb-3" placeholder="Nombre" name="sms_name" required>
+                    <label for="ussd_name" class="text-danger d-none">Nombre</label>
+                    <input type="text" class="form-control mb-3" placeholder="Nombre" name="ussd_name" required>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
-                    <label for="sms_code" class="text-danger d-none">Codigo de Campaña</label>
-                    <input type="text" class="form-control mb-3" placeholder="Codigo de Campaña" name="sms_code" required>
+                    <label for="ussd_code" class="text-danger d-none">Codigo de Campaña</label>
+                    <input type="text" class="form-control mb-3" placeholder="Codigo de Campaña" name="ussd_code" required>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
                     <label class="text-second">Segmentos</label>
@@ -139,10 +139,10 @@
                   </div>
                   <div class="col-12 input-group p-0 p-md-3">
                     <div class="d-flex jc-between">
-                      <label for="sms_msg" class="text-second ws-none">Mensaje</label>
+                      <label for="ussd_msg" class="text-second ws-none">Mensaje</label>
                       <a href="#"><i class="fas fa-info-circle text-dark"></i></a>
                     </div>
-                    <textarea name="sms_msg" id="sms_msg" class="cd_text-area form_shields_validate" placeholder="Escribe tu mensaje..." maxlength="140" required></textarea>
+                    <textarea name="ussd_msg" id="ussd_msg" class="cd_text-area form_shields_validate" placeholder="Escribe tu mensaje..." maxlength="140" required></textarea>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
                     <label class="text-second">Categoria</label>
@@ -156,12 +156,12 @@
                     </select>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
-                    <label for="sms_code" class="text-second">Fecha de envio</label>
-                    <input type="date" class="form-control" placeholder="Selecciona una fecha" name="sms_date-send" required>
+                    <label for="ussd_code" class="text-second">Fecha de envio</label>
+                    <input type="date" class="form-control" placeholder="Selecciona una fecha" name="ussd_date-send" required>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
-                    <label for="sms_code" class="text-second">Hora de envio</label>
-                    <input type="time" class="form-control" placeholder="Selecciona hora de envio" name="sms_time-send" required>
+                    <label for="ussd_code" class="text-second">Hora de envio</label>
+                    <input type="time" class="form-control" placeholder="Selecciona hora de envio" name="ussd_time-send" required>
                   </div>
                 </div>
 
@@ -174,7 +174,7 @@
                     <input type="checkbox" name="preview_onoff" id="off_on_preview" class="switch-checkbox" checked>
                   </div>
                   <div class="col-12 text-center mt-5">
-                    <img src="../../media/img/phone-preview.png" alt="img-phone-preview" class="img img-fluid non_preview">
+                    <img src="../../media/img/phone-preview-2.png" alt="img-phone-preview" class="img img-fluid non_preview">
                   </div>
                   
                 </div>
