@@ -15,13 +15,15 @@
   color: #032769; }
 
 .tag {
-  padding: 5px;
-  font-size: 14px;
+  padding: 3px 5px;
+  font-size: 12px;
   font-weight: bold;
   border-radius: 5px;
   width: 120px;
   margin: auto;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 0 3px; }
 .tag-main {
   background: #1973c1;
   color: #fff;
@@ -384,17 +386,20 @@ img.non_preview::before {
 .cd_table .table-hover > tbody > tr {
   transition: ease-in-out .1s all !important; }
 
+.clickable-row {
+  cursor: pointer !important; }
+
 /* Hover en Tablas*/
 .cd_table .table-hover.thover-primary > tbody > tr:hover {
   background-color: #cce5ff; }
 .cd_table .table-hover.thover-warning > tbody > tr:hover {
-  background-color: #fff3cd; }
+  background-color: #f5f5f1; }
 .cd_table .table-hover.thover-success > tbody > tr:hover {
   background-color: #d4edda; }
 .cd_table .table-hover.thover-danger > tbody > tr:hover {
   background-color: #f8d7da; }
 .cd_table .table-hover.thover-warning > tbody > tr:hover {
-  background-color: #fff3cd; }
+  background-color: #f5f5f1; }
 .cd_table .table-hover.thover-info > tbody > tr:hover {
   background-color: #d1ecf1; }
 .cd_table .table-hover.thover-light > tbody > tr:hover {

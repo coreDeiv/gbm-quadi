@@ -35,6 +35,9 @@
 .cd_table .table-hover > tbody > tr {
   transition: ease-in-out .1s all !important;
 }
+.clickable-row {
+  cursor: pointer !important;
+}
 
 /* Hover en Tablas*/
 .cd_table {

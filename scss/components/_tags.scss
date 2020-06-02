@@ -1,11 +1,13 @@
 .tag {
-  padding: 5px;
-  font-size: 14px;
+  padding: 3px 5px;
+  font-size: 12px;
   font-weight: bold;
   border-radius: 5px;
   width: 120px;
   margin: auto;
   letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 0 3px;
   &-main {
     background: $color_main;
     color: $color_5;

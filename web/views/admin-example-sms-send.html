@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>GBM | Crear nuevo SMS</title>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
+    <link rel='shorcut icon' type='image/png' href='../../media/logo/logo.PNG' />
+    <link rel="stylesheet" href="../../fonts/fontawesome/css/all.min.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css"><!--Century Gothic Font-->
+		<link href="../../css/bootstrap-4.3.1.min.css" rel="stylesheet" />
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../../css/bootstraplus.min.css" rel="stylesheet" />
+		<link href="../../css/normalize.css" rel="stylesheet" />
+		<link href="../../css/styles.min.css" rel="stylesheet" />
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header>
+			<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img src="../../media/logo/logo.PNG" alt="img-logo" class="img img-fluid of-cover w-75">
+            </a>
+            <ul class="nav navbar-top-links navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="admin-users.html">USUARIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTOS</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link active" href="admin-sms.html">SMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin-ussd.html">USD</a>
+              </li>
+              <li class="nav-item gear-item">
+                <a class="nav-link" href="admin-settings_profile.html"><i class="fal fa-cog"></i></a>
+              </li>
+            </ul>
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<!-- Contenido Principal -->
+		<main id="admin-usuarios">
+			<div class="panel panel-container p-5">
+				
+				<form action="" method="GET" id="form_sms">
+          <div class="container-fluid">
+
+            <!-- Back to the list of SMS -->
+            <div class="row ai-center">
+              <div class="col-md-12">
+                <a href="admin-sms.html" class="text-muted"><i class="fas fa-chevron-left"></i> Atras</a>
+              </div>
+            </div>
+
+            <!-- Number title of SMS - subtitle of SMS - Tag SMS -->
+            <div class="row ai-center pt-1">
+              <div class="col-6 d-flex ai-center jc-start">
+                <h1 class="pr-5 border-right"><span class="text-main text-bold">#2543 -</span> SMS 1</h1><span class="tag tag-main-outline ml-5 vw-5-important">Programa</span>
+              </div>
+              <div class="col-6 text-right">
+                <a href="#" class="btn btn-primary btn-outline"><i class="far fa-chart-bar"></i> MÉTRICAS</a>
+              </div>
+            </div>
+
+            <!-- Creation sms Inputs and Preview -->
+            <div class="row p-5 p-md-0 mt-3">
+
+              <div class="col-12 pb-5">
+                <span>Estado: </span>
+                <span class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</span>
+              </div>
+
+              <div class="col-md-7 col-12">
+
+                <!-- Inputs -->
+                <div class="row p-5 p-md-0 ai-end">
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label for="sms_name" class="text-danger d-none">Nombre</label>
+                    <input type="text" class="form-control mb-3" placeholder="Nombre" name="sms_name" required>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label for="sms_code" class="text-danger d-none">Codigo de Campaña</label>
+                    <input type="text" class="form-control mb-3" placeholder="Codigo de Campaña" name="sms_code" required>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label class="text-second">Segmentos</label>
+                    <select class="form-control" id="segment_shield" required>
+                      <option selected="true" class="mt-5">Selecciona un Segmento</option>
+                      <option value="Base de datos">Base de datos</option>
+                      <option value="Lista de contactos">Lista de contactos</option>
+                      <option value="Consulta">Consulta</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label class="text-second">Carpeta</label>
+                    <select class="form-control" id="folder_shield" required>
+                      <!-- <option><input type="search" id="search-folder-audience"></option> -->
+                      <option selected="true" class="mt-5">Selecciona carpeta de audiencia</option>
+                      <option value="About">About</option>
+                      <option value="Base">Base</option>
+                      <option value="Blog">Blog</option>
+                      <option value="Contact">Contact</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label class="text-second">Audiencia</label>
+                    <select class="form-control" id="audiencie_shield" required>
+                      <option selected="true">Selecciona Audiencia</option>
+                      <option value="Audiencia 1">Audiencia 01</option>
+                      <option value="Audiencia 2">Audiencia 02</option>
+                      <option value="Audiencia 3">Audiencia 03</option>
+                      <option value="Audiencia 4">Audiencia 04</option>
+                      <option value="Audiencia 5">Audiencia 05</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label class="text-second ws-none">Agregar campos dinamicos</label>
+                    <div class="cd_input-group">
+                      <select class="form-control" id="dinamyc_shield" required>
+                        <option selected="true">Personalizado</option>
+                        <option value="Personalizado 1">Personalizado 1</option>
+                        <option value="Personalizado 2">Personalizado 2</option>
+                        <option value="Personalizado 3">Personalizado 3</option>
+                        <option value="Personalizado 4">Personalizado 4</option>
+                        <option value="Personalizado 5">Personalizado 5</option>
+                      </select>
+                      <a href="#" class="btn btn-primary btn-outline ml-3 btn-lg">AÑADIR</a>
+                    </div>
+                  </div>
+                  <div class="col-12 input-group p-0 p-md-3">
+                    <div class="d-flex jc-between">
+                      <label for="sms_msg" class="text-second ws-none">Mensaje</label>
+                      <a href="#"><i class="fas fa-info-circle text-dark"></i></a>
+                    </div>
+                    <textarea name="sms_msg" id="sms_msg" class="cd_text-area form_shields_validate" placeholder="Escribe tu mensaje..." maxlength="140" required></textarea>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label class="text-second">Categoria</label>
+                    <select class="form-control" id="category_shield" required>
+                      <option selected="true">Sin Categoria</option>
+                      <option value="Categoria 1">Categoria 1</option>
+                      <option value="Categoria 2">Categoria 2</option>
+                      <option value="Categoria 3">Categoria 3</option>
+                      <option value="Categoria 4">Categoria 4</option>
+                      <option value="Categoria 5">Categoria 5</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label for="sms_code" class="text-second">Fecha de envio</label>
+                    <input type="date" class="form-control" placeholder="Selecciona una fecha" name="sms_date-send" required>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-12 input-group p-0 p-md-3 form_shields_validate">
+                    <label for="sms_code" class="text-second">Hora de envio</label>
+                    <input type="time" class="form-control" placeholder="Selecciona hora de envio" name="sms_time-send" required>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-5 col-12">
+
+                <div class="row pt-10">
+                  <div class="col-12 d-flex jc-center ai-center">
+                    <label for="preview_onoff" class="mx-4 mt-3">Previsualizar</label>
+                    <input type="checkbox" name="preview_onoff" id="off_on_preview" class="switch-checkbox" checked>
+                  </div>
+                  <div class="col-12 text-center mt-5">
+                    <img src="../../media/img/phone-preview.png" alt="img-phone-preview" class="img img-fluid non_preview">
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </form>
+
+			</div>			
+		</main>	<!--/.main-->
+
+		<!-- <footer>
+			
+		</footer> -->
+	
+		<script src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='../../js/scripts.js'></script>
+		
+	</body>
+</html>
