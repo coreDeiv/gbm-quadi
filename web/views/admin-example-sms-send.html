@@ -86,6 +86,8 @@
               <div class="col-12 pb-5">
                 <span>Estado: </span>
                 <span class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</span>
+                <!-- To this button it is necessary to remove the class "d-none" in case it is a failed message. -->
+                <a href="#" class="btn btn-link d-none">Ver Detalles</a>
               </div>
 
               <div class="col-md-7 col-12">
@@ -193,6 +195,32 @@
 
           </div>
         </form>
+
+        <!-- To this container it is necessary for it to appear with the animation, add the class "active". Please pay attention to the ID Error -->
+        <div id="alert-error" class="bg-second">
+          <div class="d-flex ai-center">
+            <div class="icon-alert">
+              <i class="fal fa-times text-white bg-danger"></i>
+            </div>
+            <div class="message-alert">
+              <h4 class="text-white text-bold">Upsss! Ocurrio un error</h4>
+              <p>Lorem ipsum dolor sit <br/> amet consectetur.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- To this container it is necessary for it to appear with the animation, add the class "active". Please pay attention to the ID Error -->
+        <div id="alert-success" class="bg-second">
+          <div class="d-flex ai-center">
+            <div class="icon-alert">
+              <i class="fal fa-check text-white bg-success"></i>
+            </div>
+            <div class="message-alert">
+              <h4 class="text-white text-bold">Creado Exitosamante</h4>
+              <p>Lorem ipsum dolor sit <br/> amet consectetur.</p>
+            </div>
+          </div>
+        </div>
 
 			</div>			
 		</main>	<!--/.main-->

@@ -1,0 +1,42 @@
+td {
+  position: relative;
+  i, svg {
+    &:hover {
+      ~ .custom-cm {
+        display: block;
+      }
+    }
+  }
+  .custom-cm {
+    background: $color_5;
+    border: 1px solid $color_2;
+    box-shadow: $box-shadow-sm;
+    padding: 10px 0;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    z-index: 10000;
+    display: none;
+    &__item {
+      cursor: pointer;
+      padding: 8px 15px;
+      text-align: left;
+      &:hover {
+        background-color: #f9f9f9;
+      }
+    }
+    &:hover {
+      display: block;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: -31px;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+    }
+  }
+}
