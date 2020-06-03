@@ -65,3 +65,15 @@ const calcPosCm = () => {
 
 window.addEventListener('load', () => calcPosCm());
 window.addEventListener('resize', () => calcPosCm());
+
+// Funcion para mostrar y cerrar los detalles del mensaje o usssd fallido
+// Abrir detalles
+function openDetails() {
+  var detailsBox = document.getElementById("details-failure");
+  detailsBox.classList.add("active");
+}
+// Cerrar detalles
+function closeDetails() {
+  var closeData = document.getElementById("details-failure");
+  closeData.classList.remove("active");
+}

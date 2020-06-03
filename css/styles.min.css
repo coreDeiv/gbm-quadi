@@ -231,6 +231,40 @@ td .custom-cm:after {
   100% {
     right: -30%;
     opacity: 0; } }
+#details-failure {
+  box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05);
+  width: 35vw;
+  position: absolute;
+  top: 0;
+  right: -40%;
+  height: 100%;
+  padding: 3.5rem;
+  background: #fff;
+  display: none;
+  opacity: 0;
+  transition: ease 1s all; }
+#details-failure.active {
+  right: 0;
+  display: block;
+  transition: ease 1s all;
+  opacity: 1; }
+#details-failure .list-details {
+  height: auto;
+  max-height: 65vh;
+  overflow-y: scroll; }
+#details-failure .list-details ul {
+  list-style: none; }
+#details-failure .list-details ul li {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+#details-failure .list-details ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
+
 /* Dropdown Menu */
 .dropdown-menu > li > a {
   padding: 5px 10px; }
@@ -421,7 +455,8 @@ td .custom-cm:after {
 .btn {
   font-size: 18px;
   border-radius: 50px;
-  padding: 5px 30px; }
+  padding: 5px 30px;
+  min-width: 200px; }
 .btn:focus {
   border-radius: 50px; }
 

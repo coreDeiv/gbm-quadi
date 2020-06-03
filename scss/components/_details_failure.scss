@@ -1,0 +1,39 @@
+#details-failure {
+  box-shadow: $box-shadow-sm;
+  width: 35vw;
+  position: absolute;
+  top: 0;
+  right: -40%;
+  height: 100%;
+  padding: 3.5rem;
+  background: $color_5;
+  display: none;
+  opacity: 0;
+  transition: ease 1s all;
+  &.active {
+    right: 0;
+    display: block;
+    transition: ease 1s all;
+    opacity: 1;
+  }
+  .list-details {
+    height: auto;
+    max-height: 65vh;
+    overflow-y: scroll;
+    ul {
+      list-style: none;
+      li {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        &::before {
+          content: "\2022";
+          color: red;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
