@@ -1,3 +1,7 @@
+## v2.0.0.beta
+- **First part end**
+- Init: @coreDeiv/#49 - The first part of the project is finished. All administrator views have been completed    =>    v2.0.0
+
 ## v1.0.0.beta
 - **Start Initial Files on Project**
 - Init: @coreDeiv/#47 - Normalize is added correctly, to generate a correct visualization of the project in all web browsers    =>    v1.2.0.
