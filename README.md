@@ -25,7 +25,7 @@ Visit the [GBM-Static Page](https://coredeiv.github.io/gbm-quadi/) so you can pr
 ## Status
 
 [![Web gzip size](https://img.shields.io/github/repo-size/coredeiv/gbm-quadi?color=%2366063c&label=Github%20Project%20gzip%20size&logo=github)](https://github.com/coreDeiv/gbm-quadi)
-[![Version](https://img.shields.io/github/v/release/coredeiv/gbm-quadi?include_prereleases)](https://github.com/coreDeiv/gbm-quadi/releases/tag/v1.2.0.beta)
+[![Version](https://img.shields.io/github/v/release/coredeiv/gbm-quadi?include_prereleases)](https://github.com/coreDeiv/gbm-quadi/releases)
 [![Version](https://img.shields.io/badge/Preview%20Page-Static-%23%233579b0)](https://coredeiv.github.io/gbm-quadi/)
 
 ## Contributing
