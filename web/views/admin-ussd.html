@@ -39,7 +39,7 @@
                 <a class="nav-link" href="admin-users.html">USUARIOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTOS</a>
+                <a class="nav-link" href="admin-contacts.html">CONTACTOS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="admin-sms.html">SMS</a>
@@ -61,6 +61,8 @@
 			<div class="panel panel-container p-5">
 				
 				<div class="cotainer-fluid">
+
+          <!-- Titles and buttons -->
           <div class="row d-flex w-100 ai-center">
             <div class="col-7">
               <h2 class="text-bold text-second ls-2">USSD</h2>
@@ -81,6 +83,8 @@
               </form>
             </div>
           </div>
+
+          <!-- Table of USSD -->
           <div class="row">
             <div class="col-12 cd_table cd_table-users">
               <table class="table table-hover thover-warning">
@@ -136,7 +140,50 @@
               </table>
             </div>
           </div>
-        </div>
+
+          <!-- Pagination of all tables -->
+          <div class="row jc-center" id="pagination-tables">
+            <div class="col-12 text-center position-absolute bottom-0 pb-3">
+              <nav aria-label="Page navigation example" class="d-flex ai-center jc-center">
+
+                <!-- Pagers -->
+                <!-- In this part it is important that the element li, which is going to contain the points "..." has added the class "disabled" -->
+                <ul class="pagination pagination-numbers px-5">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13</a></li>                  
+                </ul>
+
+                <!-- Form select page -->
+                <div class="form-group border-left mx-3 pl-5 mt-4">
+                  <form action="#" method="GET" class="d-flex ai-center">
+                    <p class="ws-none mt-3">Ir a:</p>
+                    <div class="input-group mx-5">
+                      <input type="text" name="especific-number-page" class="form-control" id="go_to_number-Page" style="width: 40px; height: 40px;" maxlength="2">
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Arrows -->
+                <ul class="pagination pagination-arrows">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <i class="far fa-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <i class="far fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div><!-- /.row-->
+
+        </div><!-- /.container -->
 
         <!-- To this container it is necessary for it to appear with the animation, add the class "active". Please pay attention to the ID Error -->
         <div id="alert-error" class="bg-second">

@@ -14,6 +14,9 @@
 .text-second {
   color: #032769; }
 
+.br-none {
+  border-radius: unset !important; }
+
 .bg-primary {
   background: #fc5959 !important; }
 .bg-secondary {
@@ -264,6 +267,27 @@ td .custom-cm:after {
   display: inline-block;
   width: 1em;
   margin-left: -1em; }
+
+#pagination-tables nav ul.pagination-numbers li.active a {
+  background: #f9f9f9;
+  font-weight: bold; }
+#pagination-tables nav ul.pagination-numbers li a {
+  margin: 0 1rem;
+  border-radius: 50%;
+  color: #444444;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  cursor: pointer;
+  text-align: center; }
+#pagination-tables nav ul.pagination-arrows li a {
+  border: transparent;
+  color: #444444;
+  margin: 0 1rem;
+  border-radius: 50%; }
+
+.nav-pills .nav-link.active {
+  background: #1973c1; }
 
 /* Dropdown Menu */
 .dropdown-menu > li > a {

@@ -8,6 +8,9 @@
 .text-second {
   color: $color_second;
 }
+.br-none {
+  border-radius: unset !important;
+}
 
 .bg {
   &-primary {

@@ -1,0 +1,36 @@
+#pagination-tables {
+  nav {
+    ul.pagination {
+      &-numbers {
+        li {
+          &.active {
+            a {
+              background: $color-alert-light;
+              font-weight: bold;
+            }
+          }
+          a {
+            margin: 0 1rem;
+            border-radius: 50%;          
+            color: $color_1;
+            width: 40px;
+            height: 40px;
+            border-color: transparent;
+            cursor: pointer;
+            text-align: center;
+          }
+        }
+      }
+      &-arrows {
+        li {
+          a {
+            border: transparent;
+            color: $color_1;
+            margin: 0 1rem;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

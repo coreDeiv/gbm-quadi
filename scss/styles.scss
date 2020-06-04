@@ -7,6 +7,8 @@
 @import 'components/_contextmenu.scss';
 @import 'components/_alerts.scss';
 @import 'components/_details_failure.scss';
+@import 'components/_pagination.scss';
+@import 'components/_nav_tabs.scss';
 
 // Core
 @import 'core/_dropdown.scss';
@@ -18,7 +20,7 @@
 @import 'mixins/_queries.scss';
 @import 'mixins/_buttons.scss';
 @import 'mixins/_tables.scss';
-@import 'mixins/_inputs.scss';
+@import 'mixins/_forms.scss';
 
 // Content
 @import 'content/_index-login.scss';

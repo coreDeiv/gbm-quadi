@@ -1,0 +1,405 @@
+<!-- Titles and buttons -->
+<div class="cotainer-fluid">
+  <div class="row d-flex w-100 ai-center">
+    <div class="col-7">
+      <h2 class="text-bold text-second ls-2">SEGMENTOS</h2>
+    </div>
+  </div>
+
+  <div class="row mx-5 my-5">
+    <div class="col-12">
+      <div class="d-flex jc-between">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link text-second text-bold ls-2 active" id="pills-data_base-tab" data-toggle="pill" href="#pills-data_base" role="tab" aria-controls="pills-data_base" aria-selected="true">BASES DE DATOS</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link text-second text-bold ls-2" id="pills-contacts-tab" data-toggle="pill" href="#pills-contacts" role="tab" aria-controls="pills-contacts" aria-selected="false">LISTA DE CONTACTOS</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link text-second text-bold ls-2" id="pills-queries-tab" data-toggle="pill" href="#pills-queries" role="tab" aria-controls="pills-queries" aria-selected="false">CONSULTAS</a>
+          </li>
+        </ul>
+        <div class="input-group-icon br-none mr-5">
+          <input type="text" name="search_user" class="input-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <label for="search_user">
+            <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane active" id="pills-data_base" role="tabpanel" aria-labelledby="pills-data_base-tab">
+          
+          <!-- Table of Users -->
+          <div class="row">
+            <div class="col-12 cd_table cd_table-users">
+              <table class="table table-hover thover-primary position-relative">
+                <thead>
+                  <tr>
+                    <th scope="col" class="w-10">TIPO</th>
+                    <th scope="col" class="w-80">NOMBRE DE BASE DE DATOS</th>
+                    <th scope="col" class="w-10">CONTACTOS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">83417</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pagination of all tables -->
+          <div class="row jc-center mt-5" id="pagination-tables">
+            <div class="col-12 text-center position-absolute bottom-0 pb-3">
+              <nav aria-label="Page navigation example" class="d-flex ai-center jc-center">
+
+                <!-- Pagers -->
+                <!-- In this part it is important that the element li, which is going to contain the points "..." has added the class "disabled" -->
+                <ul class="pagination pagination-numbers px-5">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13</a></li>                  
+                </ul>
+
+                <!-- Form select page -->
+                <div class="form-group border-left mx-3 pl-5 mt-4">
+                  <form action="#" method="GET" class="d-flex ai-center">
+                    <p class="ws-none mt-3">Ir a:</p>
+                    <div class="input-group mx-5">
+                      <input type="text" name="especific-number-page" class="form-control" id="go_to_number-Page" style="width: 40px; height: 40px;" maxlength="2">
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Arrows -->
+                <ul class="pagination pagination-arrows">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <i class="far fa-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <i class="far fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div> <!-- /.tab-pane-->
+
+        <div class="tab-pane" id="pills-contacts" role="tabpanel" aria-labelledby="pills-contacts-tab">
+          
+          <!-- Table of Users -->
+          <div class="row">
+            <div class="col-12 cd_table cd_table-users">
+              <table class="table table-hover thover-primary position-relative">
+                <thead>
+                  <tr>
+                    <th scope="col" class="w-10">TIPO</th>
+                    <th scope="col" class="w-30">NOMBRE DE LISTA DE CONTACTOS</th>
+                    <th scope="col" class="w-50">NOMBRE BASE DE DATOS PRINCIPAL</th>
+                    <th scope="col" class="w-10">CONTACTOS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>adipisci autem quod</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">83417</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>deserunt repellendus eos</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>possimus laudantium et</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>aspernatur voluptatem consequatur</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>temporibus architecto autem</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pagination of all tables -->
+          <div class="row jc-center mt-5" id="pagination-tables">
+            <div class="col-12 text-center position-absolute bottom-0 pb-3">
+              <nav aria-label="Page navigation example" class="d-flex ai-center jc-center">
+
+                <!-- Pagers -->
+                <!-- In this part it is important that the element li, which is going to contain the points "..." has added the class "disabled" -->
+                <ul class="pagination pagination-numbers px-5">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13</a></li>                  
+                </ul>
+
+                <!-- Form select page -->
+                <div class="form-group border-left mx-3 pl-5 mt-4">
+                  <form action="#" method="GET" class="d-flex ai-center">
+                    <p class="ws-none mt-3">Ir a:</p>
+                    <div class="input-group mx-5">
+                      <input type="text" name="especific-number-page" class="form-control" id="go_to_number-Page" style="width: 40px; height: 40px;" maxlength="2">
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Arrows -->
+                <ul class="pagination pagination-arrows">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <i class="far fa-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <i class="far fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div> <!-- /.tab-pane-->
+
+        <div class="tab-pane" id="pills-queries" role="tabpanel" aria-labelledby="pills-queries-tab">
+          
+          <!-- Table of Users -->
+          <div class="row">
+            <div class="col-12 cd_table cd_table-users">
+              <table class="table table-hover thover-primary position-relative">
+                <thead>
+                  <tr>
+                    <th scope="col" class="w-10">TIPO</th>
+                    <th scope="col" class="w-30">NOMBRE DE CONSULTA</th>
+                    <th scope="col" class="w-50">NOMBRE BASE DE DATOS PRINCIPAL</th>
+                    <th scope="col" class="w-10">CONTACTOS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem ipsum dolor sit.</span></td>
+                    <td><span>non repudiandae qui</span></td>
+                    <td><span class="tag tag-main">83417</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Qui sapiente velit consequatur fuga ea quae.</span></td>
+                    <td><span>quia quibusdam dicta</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>quia explicabo facilis</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Quam aperiam autem eligendi et aut.</span></td>
+                    <td><span>quis atque sint</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>autem sequi quas</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Perspiciatis expedita at a distinctio consequatur non ad magni.</span></td>
+                    <td><span>vitae veniam commodi</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>quidem est eius</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-server"></i></span></td>
+                    <td><span>Cumque magnam atque voluptatem modi ea qui quo dolores ut.</span></td>
+                    <td><span>sit alias ad</span></td>
+                    <td><span class="tag tag-main">46152</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><i class="fal fa-folder-open"></i></span></td>
+                    <td><span>Lorem, ipsum.</span></td>
+                    <td><span>debitis tenetur autem</span></td>
+                    <td><span class="tag tag-main">96568</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pagination of all tables -->
+          <div class="row jc-center mt-5" id="pagination-tables">
+            <div class="col-12 text-center position-absolute bottom-0 pb-3">
+              <nav aria-label="Page navigation example" class="d-flex ai-center jc-center">
+
+                <!-- Pagers -->
+                <!-- In this part it is important that the element li, which is going to contain the points "..." has added the class "disabled" -->
+                <ul class="pagination pagination-numbers px-5">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13</a></li>                  
+                </ul>
+
+                <!-- Form select page -->
+                <div class="form-group border-left mx-3 pl-5 mt-4">
+                  <form action="#" method="GET" class="d-flex ai-center">
+                    <p class="ws-none mt-3">Ir a:</p>
+                    <div class="input-group mx-5">
+                      <input type="text" name="especific-number-page" class="form-control" id="go_to_number-Page" style="width: 40px; height: 40px;" maxlength="2">
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Arrows -->
+                <ul class="pagination pagination-arrows">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <i class="far fa-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <i class="far fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div> <!-- /.tab-pane-->
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- To this container it is necessary for it to appear with the animation, add the class "active". Please pay attention to the ID Error -->
+<div id="alert-error" class="bg-second">
+  <div class="d-flex ai-center">
+    <div class="icon-alert">
+      <i class="fal fa-times text-white bg-danger"></i>
+    </div>
+    <div class="message-alert">
+      <h4 class="text-white text-bold">Upsss! Ocurrio un error</h4>
+      <p>Lorem ipsum dolor sit <br/> amet consectetur.</p>
+    </div>
+  </div>
+</div>
+
+<!-- To this container it is necessary for it to appear with the animation, add the class "active". Please pay attention to the ID Error -->
+<div id="alert-success" class="bg-second">
+  <div class="d-flex ai-center">
+    <div class="icon-alert">
+      <i class="fal fa-check text-white bg-success"></i>
+    </div>
+    <div class="message-alert">
+      <h4 class="text-white text-bold">Creado Exitosamante</h4>
+      <p>Lorem ipsum dolor sit <br/> amet consectetur.</p>
+    </div>
+  </div>
+</div>
