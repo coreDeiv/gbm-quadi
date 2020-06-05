@@ -615,7 +615,9 @@ td .custom-cm:after {
 
 input, select {
   border-radius: 50px !important;
-  padding: auto 10px; }
+  padding: auto 10px;
+  font-size: 14px;
+  line-height: 1.42857143; }
 
 select, option {
   border-bottom-left-radius: 50px;
@@ -712,6 +714,70 @@ select, option {
   top: 50%;
   margin-left: 15%;
   color: #fff; }
+
+.btn-group-edit {
+  position: relative;
+  display: flex; }
+.btn-group-edit input {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+.btn-group-edit input:focus {
+  outline: transparent !important; }
+.btn-group-edit a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 50px;
+  height: 100%;
+  background: #032769;
+  text-align: center;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; }
+.btn-group-edit a i, .btn-group-edit a svg {
+  color: #fff; }
+
+.btn-group-avatar {
+  position: relative;
+  background: #032769;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: url(../media/img/bgi-login.png);
+  background-size: cover;
+  background-position: center;
+  margin: auto; }
+.btn-group-avatar button {
+  background: transparent;
+  border: none; }
+.btn-group-avatar button i, .btn-group-avatar button svg {
+  color: #fff; }
+.btn-group-avatar button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%; }
+.btn-group-avatar button:focus {
+  outline: transparent; }
+.btn-group-avatar label {
+  color: #fff;
+  font-size: 1.5rem; }
 
 .login {
   position: absolute;

@@ -31,6 +31,8 @@ input,
 select {
   border-radius: 50px !important;
   padding: auto 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
 }
 
 select, 
@@ -149,5 +151,79 @@ option {
       margin-left: 15%;
       color: $color_5;
     }
+  }
+}
+
+.btn-group-edit {
+  position: relative;
+  display: flex;
+  input {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    &:focus {
+      outline: transparent !important;
+    }
+  }
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 50px;
+    height: 100%;
+    background: $color_second;
+    text-align: center;border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    i, svg {
+      color: $color_5;
+    }
+  }
+}
+
+.btn-group-avatar {
+  position: relative;
+  background: $color_second;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: url(../media/img/bgi-login.png);
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  button {
+    background: transparent;
+    border: none;
+    i, svg {
+      color: $color_5;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border-radius: 50%;
+    }
+    &:focus {
+      outline: transparent;
+    }
+  }
+  label {
+    color: #fff;
+    font-size: 1.5rem;
   }
 }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>GBM | Configuracion Acoustic</title>
+		<title>GBM | Configuracion Perfil</title>
     <meta charset='utf-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
-		<link rel='shorcut icon' type='image/png' href='../../media/logo/logo.svg' />
+		<link rel='shorcut icon' type='image/png' href='../../media/logo/logo.PNG' />
     <link rel="stylesheet" href="../../fonts/fontawesome/css/all.min.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css"><!--Century Gothic Font-->
 		<link href="../../css/bootstrap-4.3.1.min.css" rel="stylesheet" />
@@ -61,16 +61,16 @@
 			<h4 class="text-center text-white pt-10 text-bold">CONFIGURACION</h4>
 			<div class="divider"></div>
 			<ul class="nav menu">
-				<li><a href="admin-settings_profile.html">Perfil</a></li>
-				<li><a href="admin-settings-general.html">Configaracion General</a></li>
+				<li><a href="#">Perfil</a></li>
+				<li class="active"><a href="#">Configaracion General</a></li>
 				<li><a href="admin-settings_id_campaign.html">ID de Compañia</a></li>
-				<li class="active"><a href="#">Configaracion Acoustic</a></li>
+				<li><a href="admin-settings_acoustic.html">Configaracion Acoustic</a></li>
 				<li><a href="../../index.html">Cerrar Sesión</a></li>
 			</ul>
 		</aside><!--/.sidebar-->
 		
 		<!-- Contenido Principal -->
-		<main class="col-auto offset-lg-2 offset-md-3 main">
+		<main class="col-auto offset-lg-2 offset-md-3">
 					
 			<div class="panel panel-container">
 				
@@ -79,7 +79,7 @@
           <!-- Title -->
           <div class="row ai-center">
             <div class="col-6">
-              <h1 class="text-second text-bold">CONFIGURACION ACOUSTIC</h1>
+              <h1 class="text-second text-bold">CONFIGURACION GENERAL</h1>
             </div>
             <div class="col-6">
               <a href="#" class="btn btn-primary float-right">GUARDAR</a>
@@ -88,25 +88,38 @@
           </div>
         
           <!-- Form of profile -->
-          <div class="row py-5">
-            <form method="GET" class="w-100">
-              <div class="col-md-4">
-                <div class="input-group">
-                  <input type="text" class="form-control" name="name_settings" placeholder="Pod Acoustic" required />
+          <form method="GET" class="w-100">
+            <div class="row py-5 ai-center">
+              <div class="col-md-2">
+                <div class="btn-group-avatar">
+                  <button type="file" name="change_avatar" id="change-avatar"><i class="fas fa-camera"></i></button>
+                  <label for="change_avatar">Cambiar Imagen</label>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="input-group">
-                  <input type="email" class="form-control" name="email_settings" placeholder="Acoustic Key" required />
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <!-- <label for="name_settings" class="text-second">Nombre</label> -->
+                      <input type="text" class="form-control" name="name_settings" placeholder="Nombre de aplicacion">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <!-- <label for="email_settings" class="text-second">Correo</label> -->
+                      <input type="number" class="form-control" name="email_settings" placeholder="Cantidad de registros">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <!-- <label for="psw_settings" class="text-second">Contraseña</label> -->
+                      <input type="time" class="form-control" name="psw_settings" placeholder="Tiempo de envio">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="input-group">
-                  <input type="password" class="form-control" name="psw_settings" placeholder="Acoustic Secret" required />
-                </div>
-              </div>
-            </form>
-          </div>
+            </div>
+          </form>
 
         </div>
 
@@ -121,7 +134,7 @@
 		<script src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
     <script src='https://kit.fontawesome.com/25f07c253e.js'></script>
-    <script src='../../js/scripts.js'></script>
+    <script src='js/scripts.js'></script>
 		
 	</body>
 </html>
