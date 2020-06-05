@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>GBM | SMS</title>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
+    <link rel='shorcut icon' type='image/png' href='../../media/logo/logo.PNG' />
+    <link rel="stylesheet" href="../../fonts/fontawesome/css/all.min.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css"><!--Century Gothic Font-->
+		<link href="../../css/bootstrap-4.3.1.min.css" rel="stylesheet" />
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../../css/bootstraplus.min.css" rel="stylesheet" />
+		<link href="../../css/normalize.css" rel="stylesheet" />
+		<link href="../../css/styles.min.css" rel="stylesheet" />
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header>
+			<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-href="#sidebar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img src="../../media/logo/logo.PNG" alt="img-logo" class="img img-fluid of-cover w-75">
+            </a>
+            <ul class="nav navbar-top-links navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="user-contacts.html">CONTACTOS</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link active" href="#">SMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="user-ussd.html">USD</a>
+              </li>
+              <li class="nav-item user-item">
+                <a class="nav-link user-link" href="user-settings_profile.html">
+                  <h4>ANDREA D</h4>
+                  <p class="font-weight-light">Editar Perfil</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html"><i class="fa fa-sign-out"></i></a>
+              </li>
+            </ul>
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<!-- Contenido Principal -->
+		<main id="user-usuarios">
+			<div class="panel panel-container p-5">
+        
+        <!-- Titles and buttons -->
+				<div class="cotainer-fluid">
+          <div class="row d-flex w-100 ai-center">
+            <div class="col-7">
+              <h2 class="text-bold text-second ls-2">SMS</h2>
+            </div>
+            <div class="col-5 d-flex">
+              <form method="GET">
+                <div class="input-group-icon">
+                  <input type="text" name="search_user" class="input-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <label for="search_user">
+                    <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                      <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                  </label>
+                </div>
+                <a href="#" class="btn btn-primary btn-outline"><i class="far fa-chart-bar"></i> MÉTRICAS</a>
+                <a href="user-create-sms.html" class="btn btn-primary">CREAR SMS</a>
+              </form>
+            </div>
+          </div>
+
+          <!-- Table with SMS -->
+          <div class="row">
+            <div class="col-12 cd_table cd_table-users">
+              <table class="table table-hover thover-warning">
+                <thead>
+                  <tr>
+                    <th scope="col" class="w-70">NOMBRE SMS</th>
+                    <th scope="col"><a href="#" id="order_by">FECHA FINAL <i class="fas fa-sort"></i></a></th>
+                    <th scope="col" class="text-center">ESTADO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="clickable-row" data-href="user-example-sms-send.html">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 1 <span class="tag tag-main-outline">Programa</span></td>
+                    <td><span>Thu May 14 2020 05:12:32</span></td>
+                    <td><div class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</div></td>
+                  </tr>
+                  <tr class="clickable-row" data-href="#">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 2</td>
+                    <td><span>Sat Sep 28 2019 07:48:03</span></td>
+                    <td><div class="tag tag-primary">Programado</div></td>
+                  </tr>
+                  <tr class="clickable-row" data-href="user-example-sms-error.html">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 3</td>
+                    <td><span>Mon Nov 11 2019 21:33:48</span></td>
+                    <td><div class="tag tag-danger">Fallido</div></td>
+                  </tr>
+                  <tr class="clickable-row" data-href="#">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 4 <span class="tag tag-main-outline">Programa</span></td>
+                    <td><span>Fri Feb 14 2020 04:19:44</span></td>
+                    <td><div class="tag tag-secondary">Borrador</div></td>
+                  </tr>
+                  <tr class="clickable-row" data-href="#">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 5 <span class="tag tag-main-outline">Programa</span></td>
+                    <td><span>Thu Dec 05 2019 16:21:39</span></td>
+                    <td><div class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</div></td>
+                  </tr>
+                  <tr class="clickable-row" data-href="#">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 6</td>
+                    <td><span>Mon Feb 03 2020 18:06:00</span></td>
+                    <td><div class="tag tag-success"><i class="fas fa-check text-light"></i> Enviado</div></td>
+                  </tr>
+                  <tr class="clickable-row" data-href="#">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 7</td>
+                    <td><span>Fri Mar 27 2020 17:51:05</span></td>
+                    <td><div class="tag tag-primary">Programado</div></td>
+                  </tr>
+                  <tr class="clickable-row" data-href="#">
+                    <td><span class="text-main text-bold">#2543 -</span> SMS 8 <span class="tag tag-main-outline">Programa</span></td>
+                    <td><span>Fri Sep 20 2019 14:38:11</span></td>
+                    <td><div class="tag tag-primary">Programado</div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pagination of all tables -->
+          <div class="row jc-center" id="pagination-tables">
+            <div class="col-12 text-center position-absolute bottom-0 pb-3">
+              <nav aria-label="Page navigation example" class="d-flex ai-center jc-center">
+
+                <!-- Pagers -->
+                <!-- In this part it is important that the element li, which is going to contain the points "..." has added the class "disabled" -->
+                <ul class="pagination pagination-numbers px-5">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13</a></li>                  
+                </ul>
+
+                <!-- Form select page -->
+                <div class="form-group border-left mx-3 pl-5 mt-4">
+                  <form action="#" method="GET" class="d-flex ai-center">
+                    <p class="ws-none mt-3">Ir a:</p>
+                    <div class="input-group mx-5">
+                      <input type="text" name="especific-number-page" class="form-control" id="go_to_number-Page" style="width: 40px; height: 40px;" maxlength="2">
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Arrows -->
+                <ul class="pagination pagination-arrows">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <i class="far fa-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <i class="far fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div><!-- /.row-->
+
+        </div><!-- /.container -->
+
+        <!-- To this container it is necessary for it to appear with the animation, add the class "active". Please pay attention to the ID Error -->
+        <div id="alert-error" class="bg-second">
+          <div class="d-flex ai-center">
+            <div class="icon-alert">
+              <i class="fal fa-times text-white bg-danger"></i>
+            </div>
+            <div class="message-alert">
+              <h4 class="text-white text-bold">Upsss! Ocurrio un error</h4>
+              <p>Lorem ipsum dolor sit <br/> amet consectetur.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- To this container it is necessary for it to appear with the animation, add the class "active". Please pay attention to the ID Error -->
+        <div id="alert-success" class="bg-second">
+          <div class="d-flex ai-center">
+            <div class="icon-alert">
+              <i class="fal fa-check text-white bg-success"></i>
+            </div>
+            <div class="message-alert">
+              <h4 class="text-white text-bold">Creado Exitosamante</h4>
+              <p>Lorem ipsum dolor sit <br/> amet consectetur.</p>
+            </div>
+          </div>
+        </div>
+
+			</div>			
+		</main>	<!--/.main-->
+
+		<!-- <footer>
+			
+		</footer> -->
+	
+		<script src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='../../js/scripts.js'></script>
+		
+	</body>
+</html>
