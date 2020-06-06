@@ -13,7 +13,8 @@
     }
     .modal-body {
       background-image: $bg_linear_gradient_1;
-      .fa-check {
+      .fa-check, 
+      .fa-exclamation {
         width: 65px;
         height: 65px;
         font-size: 3rem;

@@ -82,7 +82,7 @@
               <h1 class="text-second text-bold">CONFIGURACION ACOUSTIC</h1>
             </div>
             <div class="col-6">
-              <a href="#" class="btn btn-primary float-right">GUARDAR</a>
+              <a data-toggle="modal" data-target="#save_Acoustic" href="#" class="btn btn-primary float-right">GUARDAR</a>
             </div>
             <div class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dui molestie, porta purus in, eleifend nibh.</div>
           </div>
@@ -111,6 +111,48 @@
                 </div>
               </div>
             </form>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal" id="save_Acoustic" tabindex="-1" role="dialog" aria-labelledby="save_AcousticLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="text-white cursor-pointer ml-auto" data-dismiss="modal" aria-label="Close"><i class="fal fa-times text-white"></i></a>
+                </div>
+                <div class="modal-body py-5 text-center">
+                  <i class="fas fa-exclamation bg-danger p-3"></i>
+                </div>
+                <div class="modal-footer text-center d-block">
+                  <p class="text-second lead mb-0">Esta seguro que desea editar</p>
+                  <h3 class="text-second text-bold mt-0">Las credenciales de conexion ?</h3>
+                  <p>Perdera acceso a la informacion que actualmente se encuentra llamando a su aplicacion.</p>
+                  <a href="#" data-dismiss="modal" class="btn btn-secondary btn-outline">CANCELAR</a>
+                  <a href="#" class="btn btn-success m-auto" data-toggle="modal" data-target="#process_saving-acoustic">ACEPTAR</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal" id="process_saving-acoustic" tabindex="-1" role="dialog" aria-labelledby="process_saving-acousticLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="text-white cursor-pointer ml-auto" data-dismiss="modal" aria-label="Close"><i class="fal fa-times text-white"></i></a>
+                </div>
+                <div class="modal-body py-5 text-center">
+                  <i class="fal fa-check bg-success"></i>
+                </div>
+                <div class="modal-footer text-center d-block">
+                  <h3 class="text-second text-bold mt-0">Cargando Informacion</h3>
+                  <p>¡No demoramos!<br/>Estamos procesando los cambios y realizando la conexión con accustic</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>

@@ -299,6 +299,32 @@ td .custom-cm:after {
   background: #fff;
   color: #032769; }
 
+.progress {
+  border: 2px solid #3ddd9f;
+  height: 40px;
+  border-radius: 50px;
+  width: 70%;
+  margin: auto auto !important;
+  position: relative; }
+.progress::after {
+  content: 'CARGANDO';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #3ddd9f;
+  font-weight: bold; }
+.progress .progress-bar.bg-success::after {
+  content: 'CARGANDO';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold; }
+
 /* Dropdown Menu */
 .dropdown-menu > li > a {
   padding: 5px 10px; }
@@ -809,7 +835,7 @@ select, option {
   border-bottom: 1px solid transparent; }
 .modal .modal-content .modal-body {
   background-image: linear-gradient(90deg, #032769, #1973c1); }
-.modal .modal-content .modal-body .fa-check {
+.modal .modal-content .modal-body .fa-check, .modal .modal-content .modal-body .fa-exclamation {
   width: 65px;
   height: 65px;
   font-size: 3rem;
