@@ -4,10 +4,38 @@
   font-weight: bold;
   border-radius: 5px;
   width: 120px;
-  margin: auto;
   letter-spacing: 1px;
   text-align: center;
   margin: 0 0 0 3px;
+  &-sm {
+    width: 45px !important;
+    height: 20px !important;
+    padding-bottom: 20px;
+  }
+  &-md {
+    width: 55px !important;
+    height: 20px !important;
+    padding-bottom: 20px;
+  }
+  &-lg {
+    width: 70px !important;
+    height: 20px !important;
+    padding-bottom: 20px;
+  }
+  &-xl {
+    width: 80px !important;
+    height: 20px !important;
+    padding-bottom: 20px;
+  }
+  &-center {
+    margin: auto;
+  }
+  &-left {
+    margin-left: auto;
+  }
+  &-right {
+    margin-right: auto;
+  }
   &-main {
     background: $color_main;
     color: $color_5;

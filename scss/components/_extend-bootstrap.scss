@@ -44,3 +44,30 @@
     background: $color_second !important;
   }
 }
+
+.lead {
+  &-xs {
+    font-size: 15px !important;        
+  }
+  &-sm {
+    font-size: 18px !important;      
+  }
+  &-lg {
+    font-size: 24px !important;      
+  }
+  &-xl {
+    font-size: 27px !important;
+  }
+}
+
+.text {
+  &-center-imp {
+    text-align: center !important;        
+  }
+  &-left-imp {
+    text-align: left !important;      
+  }
+  &-right-imp {
+    text-align: right !important;      
+  }
+}

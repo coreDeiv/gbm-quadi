@@ -2,6 +2,7 @@
 .cd_table {
   padding: 3.5rem 4rem;
   background: #fff;
+  margin: -3px 0 0 0px;
 }
 .cd_table > table, th, td, tr, thead, tbody {
   border: none !important;
@@ -22,6 +23,9 @@
 .cd_table table > thead > tr > th:nth-child(3),
 .cd_table table > thead > tr > th:nth-child(4) {
   text-align: center !important;
+  &.left {
+    text-align: left !important;
+  }
 }
 
 .cd_table table > tbody > tr > td:nth-child(3), 
