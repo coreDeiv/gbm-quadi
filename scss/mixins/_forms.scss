@@ -125,9 +125,11 @@ option {
   }
   &::after {
     content: 'OFF';
+    position: absolute;
     font-size: 1rem;
     font-weight: bold;
     top: 50%;
+    transform: translate(-0%, -50%);
     margin-left: 55%;
     color: $color_5;
   }  
@@ -147,9 +149,11 @@ option {
     }
     &::after {
       content: 'ON';
+      position: absolute;
       font-size: 1rem;
       font-weight: bold;
       top: 50%;
+      transform: translate(0%, -50%);
       margin-left: 15%;
       color: $color_5;
     }
