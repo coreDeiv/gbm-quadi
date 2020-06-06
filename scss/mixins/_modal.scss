@@ -1,0 +1,77 @@
+.modal {
+  &.show {
+    display: flex !important;
+  }
+  justify-content: center;
+  align-items: center;
+  .modal-content {
+    box-shadow: 0 5px 15px transparent;
+    background: transparent !important;
+    border: 1px solid transparent;
+    .modal-header {
+      border-bottom: 1px solid transparent;
+    }
+    .modal-body {
+      background-image: $bg_linear_gradient_1;
+      .fa-check {
+        width: 65px;
+        height: 65px;
+        font-size: 3rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: $color_5;
+      }
+    }
+    .modal-footer {
+      background: $color_5;
+    }
+  }
+}
+
+#modal-right,
+#modal-right_user-pass {
+  box-shadow: $box-shadow-sm;
+  width: 35vw;
+  position: absolute;
+  top: 0;
+  right: -40%;
+  height: 100%;
+  padding: 3.5rem;
+  background: $color_5;
+  display: none;
+  opacity: 0;
+  transition: ease 1s all;
+  &.active {
+    right: 0;
+    display: block;
+    transition: ease 1s all;
+    opacity: 1;
+  }
+  &.new-user {
+    z-index: 1030;
+  }
+  &.change-password {
+    z-index: 1040;
+  }
+  .list-details {
+    height: auto;
+    max-height: 65vh;
+    ul {
+      list-style: none;
+      li {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        &::before {
+          content: "\2022";
+          color: red;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}

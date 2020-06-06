@@ -1,7 +1,9 @@
 .nav-pills {
   .nav-link {
+    color: rgba($color_second, .5);
     &.active {
-      background: $color_main;
+      background: $color_5;
+      color: $color_second;
     }
   }
 } 

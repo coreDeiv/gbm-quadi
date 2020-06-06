@@ -6,7 +6,6 @@
 @import 'components/_images.scss';
 @import 'components/_contextmenu.scss';
 @import 'components/_alerts.scss';
-@import 'components/_details_failure.scss';
 @import 'components/_pagination.scss';
 @import 'components/_nav_tabs.scss';
 
@@ -21,6 +20,7 @@
 @import 'mixins/_buttons.scss';
 @import 'mixins/_tables.scss';
 @import 'mixins/_forms.scss';
+@import 'mixins/_modal.scss';
 
 // Content
 @import 'content/_index-login.scss';

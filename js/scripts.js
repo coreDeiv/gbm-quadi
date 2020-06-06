@@ -66,14 +66,25 @@ const calcPosCm = () => {
 window.addEventListener('load', () => calcPosCm());
 window.addEventListener('resize', () => calcPosCm());
 
-// Funcion para mostrar y cerrar los detalles del mensaje o usssd fallido
-// Abrir detalles
+// Funcion para mostrar y cerrar los modales ajustados a la derecha.
+// Abrir detalles, crear usuario
 function openDetails() {
-  var detailsBox = document.getElementById("details-failure");
+  var detailsBox = document.getElementById("modal-right");
   detailsBox.classList.add("active");
 }
-// Cerrar detalles
+// Cerrar detalles, crear usuario
 function closeDetails() {
-  var closeData = document.getElementById("details-failure");
+  var closeData = document.getElementById("modal-right");
+  closeData.classList.remove("active");
+}
+
+// Abrir cambiar contraseña vista de usuario
+function userChangePassword_open() {
+  var detailsBox = document.getElementById("modal-right_user-pass");
+  detailsBox.classList.add("active");
+}
+// Cerrar cambiar contraseña vista de usuario
+function userChangePassword_close() {
+  var closeData = document.getElementById("modal-right_user-pass");
   closeData.classList.remove("active");
 }
