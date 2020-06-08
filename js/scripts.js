@@ -88,3 +88,14 @@ function userChangePassword_close() {
   var closeData = document.getElementById("modal-right_user-pass");
   closeData.classList.remove("active");
 }
+
+// Abrir cambiar contraseña perfil de administrador
+function adminChangePassword_open() {
+  var detailsBox = document.getElementById("modal-right_admin-pass");
+  detailsBox.classList.add("active");
+}
+// Cerrar cambiar contraseña perfil de administrador
+function adminChangePassword_close() {
+  var closeData = document.getElementById("modal-right_admin-pass");
+  closeData.classList.remove("active");
+}

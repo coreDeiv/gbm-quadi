@@ -107,7 +107,7 @@
                   <label for="psw_settings" class="text-second">Contraseña</label>
                   <div class="btn-group-edit">
                     <input type="password" name="psw_settings" placeholder="Contraseña">
-                    <a href="#"><i class="fas fa-pen"></i></a>
+                    <a onclick="adminChangePassword_open()" href="#"><i class="fas fa-pen"></i></a>
                   </div>
                 </div>
               </div>
@@ -118,7 +118,35 @@
 
 			</div>			
 			
-		</main>	<!--/.main-->
+    </main>	<!--/.main-->
+    
+    <div id="modal-right_admin-pass" class="new-user">
+      <div class="d-flex fd-column jc-between h-100">
+        <div class="top-items">
+          <div class="d-flex jc-between ai-center">
+            <h1 class="text-second">NUEVA CONTRASEÑA</h1>
+            <a onclick="adminChangePassword_close()"><i class="fal fa-times fa-2x text-dark cursor-pointer"></i></a>
+          </div>
+          <div class="list-details px-5">
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem vitae perferendis optio velit tempora!</P>
+          </div>
+          <div class="form-group pt-5 px-5">
+            <form action="#" method="GET">
+              <div class="input-group my-5 py-1">
+                <input type="text" name="name_new-user" class="form-control" id="name_new-user" placeholder="Nombre">
+              </div>
+              <div class="input-group my-5 py-1">
+                <input type="correo" name="email_new-user" class="form-control" id="email_new-user" placeholder="Correo">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="box-group text-center mb-5">
+          <a onclick="adminChangePassword_close()" class="btn btn-light mx-3">CANCELAR</a>
+          <a onclick="adminChangePassword_close()" class="btn btn-primary mx-3 text-white">GUARDAR</a>
+        </div>
+      </div>
+    </div>
 
 		<!-- <footer>
 			

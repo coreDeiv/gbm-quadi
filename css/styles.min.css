@@ -271,6 +271,8 @@ td .custom-cm:after {
   100% {
     right: -30%;
     opacity: 0; } }
+#pagination-tables {
+  width: 100%; }
 #pagination-tables nav {
   background: #fff !important; }
 #pagination-tables nav ul.pagination-numbers li.active a {
@@ -506,12 +508,31 @@ td .custom-cm:after {
 
 .panel {
   height: auto;
-  height: calc(100vh - 60px) !important;
+  min-height: calc(100vh - 60px) !important;
   background: #f7f7fa;
   margin-bottom: 0;
   position: relative;
   width: 100%;
   overflow: hidden; }
+
+.row.gbm::after, .row.gbm::before {
+  display: none;
+  content: ""; }
+.row.gbm-box {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.row.gbm-box__header {
+  display: block; }
+.row.gbm-box__header-flex {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: auto;
+  min-width: 500px; }
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -851,7 +872,7 @@ select, option {
 .modal .modal-content .modal-footer {
   background: #fff; }
 
-#modal-right, #modal-right_user-pass {
+#modal-right, #modal-right_user-pass, #modal-right_admin-pass {
   box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05);
   width: 35vw;
   position: absolute;
@@ -863,24 +884,24 @@ select, option {
   display: none;
   opacity: 0;
   transition: ease 1s all; }
-#modal-right.active, #modal-right_user-pass.active {
+#modal-right.active, #modal-right_user-pass.active, #modal-right_admin-pass.active {
   right: 0;
   display: block;
   transition: ease 1s all;
   opacity: 1; }
-#modal-right.new-user, #modal-right_user-pass.new-user {
+#modal-right.new-user, #modal-right_user-pass.new-user, #modal-right_admin-pass.new-user {
   z-index: 1030; }
-#modal-right.change-password, #modal-right_user-pass.change-password {
+#modal-right.change-password, #modal-right_user-pass.change-password, #modal-right_admin-pass.change-password {
   z-index: 1040; }
-#modal-right .list-details, #modal-right_user-pass .list-details {
+#modal-right .list-details, #modal-right_user-pass .list-details, #modal-right_admin-pass .list-details {
   height: auto;
   max-height: 65vh; }
-#modal-right .list-details ul, #modal-right_user-pass .list-details ul {
+#modal-right .list-details ul, #modal-right_user-pass .list-details ul, #modal-right_admin-pass .list-details ul {
   list-style: none; }
-#modal-right .list-details ul li, #modal-right_user-pass .list-details ul li {
+#modal-right .list-details ul li, #modal-right_user-pass .list-details ul li, #modal-right_admin-pass .list-details ul li {
   margin-top: 2rem;
   margin-bottom: 2rem; }
-#modal-right .list-details ul li::before, #modal-right_user-pass .list-details ul li::before {
+#modal-right .list-details ul li::before, #modal-right_user-pass .list-details ul li::before, #modal-right_admin-pass .list-details ul li::before {
   content: "\2022";
   color: red;
   font-weight: bold;
