@@ -75,7 +75,36 @@ included in the project:
 
 - When feasible, default color palettes should comply with [WCAG color contrast guidelines](https://www.w3.org/TR/WCAG20/#visual-audio-contrast).
 - Except in rare cases, don't remove default `:focus` styles (via e.g. `outline: none;`) without providing alternative styles. See [this A11Y Project post](https://a11yproject.com/posts/never-remove-css-outlines/) for more details.
-- "Attractive"
+- For fully custom project styles, please use the Sass template "_gbm.scss" with BEM structure, and remember to add the gbm class before the custom class.
+
+Example:
+
+```html
+<tag class="gbm gbm_my-custom" id="my-id"></tag>
+<tag class="gbm gbm_my-custom__class" id="my-id"></tag>
+<tag class="gbm gbm_my-custom__class--item" id="my-id"></tag>
+<tag class="gbm gbm_my-custom__class--item-default" id="my-id"></tag>
+```
+
+And within the Sass file, following the BEM structure
+
+```css
+.gbm {
+   &_my-custom {
+      property: css;
+      property-2: css;
+      &__class {
+         property: css;
+         property-2: css;
+         &--item-default {
+            property: css;
+            property-2: css;
+         }
+      }
+   }
+}
+```
+- Finally be "Attractive"
 
 ### JS
 - 1 tab (no spaces)

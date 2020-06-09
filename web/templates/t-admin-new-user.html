@@ -1,0 +1,41 @@
+<!-- Modal new user -->
+<div id="modal-right" class="new-user">
+  <div class="d-flex fd-column jc-between h-100">
+    <div class="top-items">
+      <div class="d-flex jc-between ai-center">
+        <h1 class="text-second">NUEVO USUARIO</h1>
+        <a onclick="closeDetails()"><i class="fal fa-times fa-2x text-dark cursor-pointer"></i></a>
+      </div>
+      <div class="list-details px-5">
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem vitae perferendis optio velit tempora!</P>
+      </div>
+      <div class="form-group pt-5 px-5">
+        <form action="#" method="GET">
+          <div class="input-group my-5 py-1">
+            <input type="text" name="name_new-user" class="form-control" id="name_new-user" placeholder="Nombre">
+          </div>
+          <div class="input-group my-5 py-1">
+            <input type="correo" name="email_new-user" class="form-control" id="name_new-user" placeholder="Correo">
+          </div>
+          <div class="input-group">
+            <select class="form-control" id="category_shield" required>
+              <option selected="true">Asignar Rol</option>
+              <option value="Rol 1">Rol 1</option>
+              <option value="Rol 2">Rol 2</option>
+              <option value="Rol 3">Rol 3</option>
+              <option value="Rol 4">Rol 4</option>
+              <option value="Rol 5">Rol 5</option>
+            </select>
+          </div>
+          <div class="input-group my-5 py-1">
+            <input type="password" name="pass_new-user" class="form-control" id="name_new-user" placeholder="Contraseña">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="box-group text-center mb-5">
+      <a onclick="closeDetails()" class="btn btn-light mx-3">CANCELAR</a>
+      <a onclick="closeDetails()" class="btn btn-primary mx-3 text-white">GUARDAR</a>
+    </div>
+  </div>
+</div>

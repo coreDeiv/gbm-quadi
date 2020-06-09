@@ -586,6 +586,8 @@ td .custom-cm:after {
   background: #fff;
   border-color: #1973c1;
   color: #1973c1; }
+.btn-primary-main {
+  background: #4382be; }
 
 .btn-success {
   background: #3ddd9f; }
@@ -928,7 +930,7 @@ select, option {
     overflow: hidden;
     padding: 0;
     height: 100vh; } }
-.login .cd_form-login {
+.login .gbm_form-login {
   background: #1973C1;
   color: #fff;
   height: auto;
@@ -936,38 +938,39 @@ select, option {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05); }
-.login .cd_form-login .content-form {
-  width: 65%;
+  box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05);
+  max-width: 64rem; }
+.login .gbm_form-login .content-form {
+  width: 70%;
   margin: auto;
   margin-top: 3.5rem;
   margin-bottom: 3.5rem; }
 @media (max-width: 978px) {
-  .login .cd_form-login .content-form {
+  .login .gbm_form-login .content-form {
     width: 90%; } }
-.login .cd_form-login .content-form h2 {
+.login .gbm_form-login .content-form h2 {
   font-weight: bold; }
-.login .cd_form-login .content-form .form-group input {
-  background: #3081c7;
+.login .gbm_form-login .content-form .form-group input {
+  background: #4382be;
   border-radius: 50px;
   padding: 20px 30px;
   border: none;
   border-bottom: 2px solid #fff;
   color: #fff;
   font-weight: bold; }
-.login .cd_form-login .content-form .form-group input::-webkit-input-placeholder {
+.login .gbm_form-login .content-form .form-group input::-webkit-input-placeholder {
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 22px; }
-.login .cd_form-login .content-form .form-group input:focus::-webkit-input-placeholder {
+.login .gbm_form-login .content-form .form-group input:focus::-webkit-input-placeholder {
   color: #fff; }
-.login .cd_form-login .content-form .form-group a[href="recover-password.html"] {
+.login .gbm_form-login .content-form .form-group a[href="recover-password.html"] {
   font-size: 14px; }
+.login .select_profile {
+  max-width: 64rem; }
 .login .select_profile .btn {
   border-radius: 50px;
-  width: 200px; }
-.login .select_profile .btn {
   width: 40%;
   margin: 0 1% !important; }
 

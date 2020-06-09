@@ -1,0 +1,37 @@
+<!-- this add the class "active" for view. -->
+<div id="modal-right" class="">
+  <div class="d-flex fd-column jc-between h-100">
+    <div class="top-items">
+      <div class="d-flex jc-between ai-center">
+        <h1 class="text-second">PERFIL</h1>
+        <a onclick="closeDetails()"><i class="fal fa-times fa-2x text-dark cursor-pointer"></i></a>
+      </div>
+      <div class="list-details px-5">
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem vitae perferendis optio velit tempora!</P>
+      </div>
+      <div class="form-group pt-5 px-5">
+        <form action="#" method="GET">
+          <div class="input-group my-5 py-1">
+            <label class="text-second" for="user_name">Nombre</label>
+            <input type="text" name="user_name" class="form-control" id="user_name" placeholder="Nombre">
+          </div>
+          <div class="input-group my-5 py-1">
+            <label class="text-second" for="user_email">Correo</label>
+            <input type="email" name="user_email" class="form-control" id="user_email" placeholder="Correo">
+          </div>
+          <div class="input-group my-5">
+            <label class="text-second" for="user_password">Contraseña</label>
+            <div class="btn-group-edit">
+              <input type="password" name="user_password" id="user_password" placeholder="Contraseña">
+              <a onclick="userChangePassword_open()" href="#"><i class="fas fa-pen"></i></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="box-group text-center mb-5">
+      <a onclick="closeDetails()" class="btn btn-light mx-3">CANCELAR</a>
+      <a onclick="closeDetails()" class="btn btn-primary mx-3 text-white">GUARDAR</a>
+    </div>
+  </div>
+</div>

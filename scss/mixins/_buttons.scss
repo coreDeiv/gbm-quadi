@@ -41,6 +41,9 @@
       color: $color_main;
     }
   }
+  &-main {
+    background: $color_main-sm;
+  }
 }
 
 .btn-success {

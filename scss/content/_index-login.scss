@@ -17,7 +17,7 @@
     padding: 0;
     height: 100vh;
   }
-  .cd_form-login {
+  .gbm_form-login {
     background: #1973C1;
     color: #fff;
     height: auto;
@@ -26,8 +26,9 @@
     justify-content: center;
     align-items: center;
     box-shadow: $box-shadow-sm;
+    max-width: 64rem;
     .content-form {
-      width: 65%;
+      width: 70%;
       margin: auto;
       margin-top: 3.5rem;
       margin-bottom: 3.5rem;
@@ -39,7 +40,7 @@
       }
       .form-group {
         input {
-          background: #3081c7;
+          background: $color_main-sm;
           border-radius: 50px;
           padding: 20px 30px;
           border: none;
@@ -62,12 +63,10 @@
       }
     }
   }
-  .select_profile .btn {
-    border-radius: 50px;				
-    width: 200px
-  }
   .select_profile {
+    max-width: 64rem;
     .btn {
+      border-radius: 50px;
       width: 40%;
       margin: 0 1% !important;
     }
