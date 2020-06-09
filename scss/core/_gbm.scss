@@ -1,6 +1,6 @@
 //Special Rows - Titles and buttons of tables views
 .row {
-	&.gbm {
+	&.gbm, .gbm {
     &::after, 
     &::before {
       display: none;
@@ -21,6 +21,15 @@
 					align-items: center;
 					width: auto;
 					min-width: 500px;
+				}
+			}
+		}
+		// Segmentos view
+		&_segment {
+			// Tables of segments
+			&-table {
+				&__type {
+					width: calc(200px - 30px);
 				}
 			}
 		}

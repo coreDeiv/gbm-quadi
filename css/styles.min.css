@@ -515,24 +515,26 @@ td .custom-cm:after {
   width: 100%;
   overflow: hidden; }
 
-.row.gbm::after, .row.gbm::before {
+.row.gbm::after, .row.gbm::before, .row .gbm::after, .row .gbm::before {
   display: none;
   content: ""; }
-.row.gbm-box {
+.row.gbm-box, .row .gbm-box {
   width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-.row.gbm-box__header {
+.row.gbm-box__header, .row .gbm-box__header {
   display: block; }
-.row.gbm-box__header-flex {
+.row.gbm-box__header-flex, .row .gbm-box__header-flex {
   display: flex;
   justify-content: start;
   align-items: center;
   width: auto;
   min-width: 500px; }
+.row.gbm_segment-table__type, .row .gbm_segment-table__type {
+  width: calc(200px - 30px); }
 
 /* Media Queries */
 @media (min-width: 768px) {
