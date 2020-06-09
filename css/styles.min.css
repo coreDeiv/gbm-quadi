@@ -515,6 +515,7 @@ td .custom-cm:after {
   width: 100%;
   overflow: hidden; }
 
+/* Total Custom Classes */
 .row.gbm::after, .row.gbm::before, .row .gbm::after, .row .gbm::before {
   display: none;
   content: ""; }
@@ -533,8 +534,31 @@ td .custom-cm:after {
   align-items: center;
   width: auto;
   min-width: 500px; }
-.row.gbm_segment-table__type, .row .gbm_segment-table__type {
-  width: calc(200px - 30px); }
+.row.gbm_segment-db__type, .row .gbm_segment-db__type {
+  width: calc(205px - 30px);
+  padding-left: 1% !important; }
+.row.gbm_segment-db__db--name, .row .gbm_segment-db__db--name {
+  width: 80%; }
+.row.gbm_segment-lc__type, .row .gbm_segment-lc__type {
+  width: calc(205px - 30px);
+  padding-left: 1% !important; }
+.row.gbm_segment-lc__nlc, .row .gbm_segment-lc__nlc {
+  width: 30% !important; }
+.row.gbm_segment-lc__db--name, .row .gbm_segment-lc__db--name {
+  width: 50%;
+  text-align: left !important; }
+.row.gbm_segment-lc tr > td:nth-child(3), .row .gbm_segment-lc tr > td:nth-child(3) {
+  text-align: left; }
+.row.gbm_segment-qy__type, .row .gbm_segment-qy__type {
+  width: calc(205px - 30px);
+  padding-left: 1% !important; }
+.row.gbm_segment-qy__name--query, .row .gbm_segment-qy__name--query {
+  width: 30% !important; }
+.row.gbm_segment-qy__db--name, .row .gbm_segment-qy__db--name {
+  width: 50%;
+  text-align: left !important; }
+.row.gbm_segment-qy tr > td:nth-child(3), .row .gbm_segment-qy tr > td:nth-child(3) {
+  text-align: left; }
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -616,16 +640,19 @@ td .custom-cm:after {
 .cd_table > table > thead > tr > th, .cd_table > table > thead > tr > th > span, .cd_table > table > thead > tr > th > i, .cd_table > table > thead > tr > th > svg, .cd_table > table > thead > tr > th > a {
   color: #032769 !important; }
 
+.cd_table > table > thead > tr > th {
+  padding-left: 0 !important; }
+
 .cd_table table > thead > tr > th:nth-child(1), .cd_table table > tbody > tr > td:nth-child(1) {
   padding-left: 30px; }
 
 .cd_table table > thead > tr > th:nth-child(3), .cd_table table > thead > tr > th:nth-child(4) {
-  text-align: center !important; }
+  text-align: center; }
 .cd_table table > thead > tr > th:nth-child(3).left, .cd_table table > thead > tr > th:nth-child(4).left {
   text-align: left !important; }
 
 .cd_table table > tbody > tr > td:nth-child(3), .cd_table table > tbody > tr > td:nth-child(4) {
-  text-align: center !important; }
+  text-align: center; }
 
 .cd_table .table-hover > tbody > tr > td {
   padding: 18px 0; }

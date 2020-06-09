@@ -1,3 +1,4 @@
+/* Total Custom Classes */
 //Special Rows - Titles and buttons of tables views
 .row {
 	&.gbm, .gbm {
@@ -24,12 +25,46 @@
 				}
 			}
 		}
-		// Segmentos view
 		&_segment {
-			// Tables of segments
-			&-table {
+			&-db {
 				&__type {
-					width: calc(200px - 30px);
+					width: calc(205px - 30px);
+					padding-left: 1% !important;
+				}
+				&__db--name {
+					width: 80%;
+				}
+			}
+			&-lc {
+				&__type {
+					width: calc(205px - 30px);
+					padding-left: 1% !important;
+				}
+				&__nlc {
+					width: 30% !important;
+				}
+				&__db--name {
+					width: 50%;
+					text-align: left !important;
+				}
+				tr > td:nth-child(3) {
+					text-align: left;
+				}
+			}
+			&-qy {
+				&__type {
+					width: calc(205px - 30px);
+					padding-left: 1% !important;
+				}
+				&__name--query {
+					width: 30% !important;
+				}
+				&__db--name {
+					width: 50%;
+					text-align: left !important;
+				}
+				tr > td:nth-child(3) {
+					text-align: left;
 				}
 			}
 		}
