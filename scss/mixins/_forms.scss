@@ -64,6 +64,18 @@ option {
 
 // Shield or input invalid
 .is-invalid {
+  position: relative;
+  padding-bottom: 2rem !important;
+  &::after {
+    content: 'Este campo es obligatorio*';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1.35rem;
+    padding-left: 1rem;
+    transform: translate(0, 0);
+    color: $color_danger;
+  }
   label {
     color: $color_danger;
     display: block !important;
